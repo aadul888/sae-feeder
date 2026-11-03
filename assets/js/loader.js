@@ -386,8 +386,6 @@ function toggleEditDapodik() {
   if (npsn && token) {
     npsn.disabled = false;
     token.disabled = false;
-    // Sensor dibuka saat mode edit: kosongkan agar tidak tersimpan sebagai "***"
-    if (token.value === "***") token.value = "";
     if (btn) btn.style.display = "";
     npsn.focus();
   }
@@ -400,7 +398,6 @@ function toggleEditSae() {
   if (url && key) {
     url.disabled = false;
     key.disabled = false;
-    if (key.value === "***") key.value = "";
     if (btn) btn.style.display = "";
     url.focus();
   }

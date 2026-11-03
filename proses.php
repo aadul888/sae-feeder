@@ -201,12 +201,11 @@ try {
         public function export_safe()
         {
             $safe_config = $this->config_data;
-            if (isset($safe_config['dapodik']['token'])) {
-                $safe_config['dapodik']['token'] = substr($safe_config['dapodik']['token'], 0, 8) . '***';
-            }
-            if (isset($safe_config['sae']['api_key'])) {
-                $safe_config['sae']['api_key'] = substr($safe_config['sae']['api_key'], 0, 8) . '***';
-            }
+            $safe_config['dapodik']['has_token'] = !empty($safe_config['dapodik']['token']);
+            $safe_config['sae']['has_api_key'] = !empty($safe_config['sae']['api_key']);
+            // Rahasia tidak pernah ikut keluar, walau sebagian.
+            $safe_config['dapodik']['token'] = '';
+            $safe_config['sae']['api_key'] = '';
 
             return $safe_config;
         }

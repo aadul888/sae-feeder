@@ -2,7 +2,7 @@
 ; SAE Feeder - Dapodik Data Synchronizer
 
 #define MyAppName "SAE Feeder"
-#define MyAppVersion "1.2.4"
+#define MyAppVersion "1.2.5"
 #define MyAppPublisher "SAE Education"
 #define MyAppURL "https://sae.smakpal.sch.id"
 #define MyAppExeName "SAE-Feeder.exe"
@@ -44,6 +44,7 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilen
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+
 
 
 

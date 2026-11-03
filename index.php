@@ -38,11 +38,13 @@ $config = new ConfigManager();
 $dapodik_status = $dapodik_status ?? ['status' => false, 'sekolah' => '', 'npsn' => ''];
 $sae_status = $sae_status ?? ['status' => false];
 
-// Nilai form: token & API key disensor (***) saat sudah tersimpan agar tidak bocor di HTML
+// Nilai form: token & API key tidak pernah dirender ke HTML (dikosongkan saat sudah tersimpan)
 $dapodik_npsn_val  = $dapodik_status['status'] ? htmlspecialchars($config->get('dapodik.npsn'))      : '';
-$dapodik_token_val = $dapodik_status['status'] ? '***'                                               : '';
+// Token & API key tidak pernah dirender ke HTML. Saat sudah terhubung, kolomnya dikosongkan
+// dan hanya ditandai lewat placeholder.
+$dapodik_token_val = '';
 $sae_url_val       = $sae_status['status']     ? htmlspecialchars($config->get('sae.base_url'))      : '';
-$sae_key_val       = $sae_status['status']     ? '***'                                               : '';
+$sae_key_val       = '';
 
 // Versi aplikasi untuk cek update (dibaca dari file VERSION)
 $app_version = trim(@file_get_contents(__DIR__ . '/VERSION') ?: '0.0.0');
@@ -126,7 +128,7 @@ $app_update_repo = 'aadul888/sae-feeder';
                         <div style="display: flex; gap: 0;">
                             <input type="text" class="form-control" id="dapodik_token"
                                 value="<?php echo $dapodik_token_val; ?>"
-                                placeholder="Token Web Service"
+                                placeholder="<?php echo $dapodik_status['status'] ? 'Tersimpan (tidak ditampilkan)' : 'Token Web Service'; ?>"
                                 style="border-radius: 10px <?php echo !$dapodik_status['status'] ? '0 0 10px' : '10px'; ?> !important; flex: 1;"
                                 <?php echo $dapodik_status['status'] ? 'disabled' : ''; ?>>
                             <?php if (!$dapodik_status['status']): ?>
@@ -161,7 +163,7 @@ $app_update_repo = 'aadul888/sae-feeder';
                         <div style="display: flex; gap: 0;">
                             <input type="text" class="form-control" id="sae_api_key"
                                 value="<?php echo $sae_key_val; ?>"
-                                placeholder="API Key SAE"
+                                placeholder="<?php echo $sae_status['status'] ? 'Tersimpan (tidak ditampilkan)' : 'API Key SAE'; ?>"
                                 style="border-radius: 10px <?php echo !$sae_status['status'] ? '0 0 10px' : '10px'; ?> !important; flex: 1;"
                                 <?php echo $sae_status['status'] ? 'disabled' : ''; ?>>
                             <?php if (!$sae_status['status']): ?>
