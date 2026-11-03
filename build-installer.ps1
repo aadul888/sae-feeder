@@ -71,7 +71,8 @@ Copy-Item $icoPath "$stagingDir\sae-feeder.ico" -Force
 
 # 5. Siapkan Runtime PHP Portabel Minimalis & Visual C++ Runtime
 Write-Host "[5/7] Mengemas runtime PHP 8.3 & Visual C++ Redistributable mandiri..." -ForegroundColor Yellow
-$corePhpFiles = @('php.exe', 'php-win.exe', 'php8ts.dll', 'libcrypto-3-x64.dll', 'libssl-3-x64.dll', 'nghttp2.dll', 'libssh2.dll')
+# brotli* wajib: php_curl.dll mengimpornya, tanpa itu ext curl gagal dimuat (curl_init undefined)
+$corePhpFiles = @('php.exe', 'php-win.exe', 'php8ts.dll', 'libcrypto-3-x64.dll', 'libssl-3-x64.dll', 'nghttp2.dll', 'libssh2.dll', 'brotlicommon.dll', 'brotlidec.dll')
 foreach ($f in $corePhpFiles) {
     $src = Join-Path $PhpSource $f
     if (Test-Path $src) {

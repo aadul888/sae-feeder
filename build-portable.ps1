@@ -34,7 +34,7 @@ if ($BundlePhp) {
     if ($phpFound) { $PhpSource = $phpFound.FullName }
     if (-not (Test-Path (Join-Path $PhpSource 'php.exe'))) { throw "Sumber PHP tidak ditemukan: $PhpSource" }
     New-Item -ItemType Directory -Force -Path "$stagingDir\php\ext" | Out-Null
-    $phpFiles = @('php.exe', 'php-win.exe', 'php8ts.dll', 'libcrypto-3-x64.dll', 'libssl-3-x64.dll', 'nghttp2.dll', 'libssh2.dll', 'vcruntime140.dll', 'vcruntime140_1.dll', 'msvcp140.dll')
+    $phpFiles = @('php.exe', 'php-win.exe', 'php8ts.dll', 'libcrypto-3-x64.dll', 'libssl-3-x64.dll', 'nghttp2.dll', 'libssh2.dll', 'brotlicommon.dll', 'brotlidec.dll', 'vcruntime140.dll', 'vcruntime140_1.dll', 'msvcp140.dll')
     foreach ($f in $phpFiles) { Copy-Item (Join-Path $PhpSource $f) "$stagingDir\php\$f" -Force -ErrorAction SilentlyContinue }
     foreach ($e in 'php_curl.dll', 'php_openssl.dll', 'php_mbstring.dll', 'php_fileinfo.dll', 'php_sockets.dll') {
         Copy-Item (Join-Path $PhpSource "ext\$e") "$stagingDir\php\ext\$e" -Force -ErrorAction SilentlyContinue
