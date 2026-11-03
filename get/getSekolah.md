@@ -17,10 +17,10 @@
         "rw": "2",
         "kode_wilayah": "020710AI",
         "kode_pos": "43266",
-        "nomor_telepon": "02632343003",
+        "nomor_telepon": "08151800116",
         "nomor_fax": null,
         "email": "smkn01pgl@gmail.com",
-        "website": "smkn1pagelaran.sch.id",
+        "website": "https://smkn1pagelaran.sch.id",
         "is_sks": false,
         "lintang": "-7.178400000000",
         "bujur": "107.135700000000",
@@ -28,6 +28,7 @@
         "desa_kelurahan": "Sindangkerta",
         "kecamatan": "Kec. Pagelaran",
         "kabupaten_kota": "Kab. Cianjur",
-        "provinsi": "Prov. Jawa Barat"
+        "provinsi": "Prov. Jawa Barat",
+        "is_sync_to_server": true
     }
 }

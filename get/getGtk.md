@@ -1,12 +1,12 @@
 {
-    "results": 68,
+    "results": 67,
     "id": "ptk_terdaftar_id",
     "start": 0,
     "limit": 20,
     "rows": [
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "5a11ca17-af34-43c0-80fe-60899be652f2",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "83dbdd5d-b707-4f85-b515-944d1ccd88f3",
             "ptk_id": "9cafa7eb-9086-4177-a634-37a6e8dfaddf",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-03-01",
@@ -26,9 +26,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "197410162022211002",
             "pendidikan_terakhir": "D4",
-            "bidang_studi_terakhir": "Teknik Informatika",
+            "bidang_studi_terakhir": "Ilmu Komputer",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "0e1f5ac8-d8ca-4340-874b-559047b874e7",
+                    "satuan_pendidikan_formal": "Politeknik TEDC",
+                    "fakultas": "Teknik Informatika",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2010",
+                    "tahun_lulus": "2011",
+                    "nim": "TI103001",
+                    "status_kuliah": "0",
+                    "semester": "3",
+                    "ipk": "0.00",
+                    "prodi": "1a25afe9-d3d0-4141-9af6-e481b72434c7",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Komputer",
+                    "jenjang_pendidikan_id_str": "D4",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "04543204-7a47-4dbf-9b5f-89f819bc133b",
                     "satuan_pendidikan_formal": "Politeknik TEDC",
@@ -44,7 +62,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Informatika",
                     "jenjang_pendidikan_id_str": "D4",
-                    "gelar_akademik_id_str": "Sarjana Sains Terapan"
+                    "gelar_akademik_id_str": "Sarjana Sains Terapan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "43cb4043-72d2-4be4-bd4d-d468d6a1f528",
@@ -61,7 +80,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "786b7664-6081-4056-9818-086f567ed1fc",
@@ -78,7 +98,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "673062b5-ff34-4d6d-94d1-93a6abdaac63",
@@ -95,7 +116,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -106,13 +128,16 @@
                     "tmt_pangkat": "2022-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "61631fc7-25c2-4f0f-88cc-071d778b8905",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "595687db-ac2e-4aeb-94c8-bbf4d5b9ea14",
             "ptk_id": "20e820f8-04d2-4529-ab45-d485aae449df",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2015-07-02",
@@ -150,7 +175,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "Paket C",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "18b86c2c-70f0-4f8a-87fa-08cd6e4c1bdd",
@@ -167,7 +193,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "177e2f9a-ec82-46fd-843a-c9a7097aac4b",
@@ -184,14 +211,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "c48533e8-5450-42a2-bebd-3a0299d3e235",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "f257e80f-e6d7-4999-be83-0a6b22fa2313",
             "ptk_id": "e5430fd0-c0a5-4d28-836f-abc05c51ac2a",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2015-07-02",
@@ -229,7 +259,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sistem Informasi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Komputer"
+                    "gelar_akademik_id_str": "Sarjana Komputer",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "8f9dc5cd-78a4-4cc9-aa08-453a7f0c0f0e",
+                    "satuan_pendidikan_formal": "STMIK Bandung",
+                    "fakultas": "Sistem Informasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2012",
+                    "tahun_lulus": "2018",
+                    "nim": "3212005",
+                    "status_kuliah": "0",
+                    "semester": "13",
+                    "ipk": "3.03",
+                    "prodi": "dfdb48db-8a0b-45c0-b295-444bca520ac9",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "5f503b6f-b197-4bd8-938a-c697e138b3de",
@@ -246,7 +295,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ddb3ac28-ee1e-487e-8c12-2f0588f21188",
@@ -263,7 +313,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "16c4e56a-fe52-464f-be35-fa0396243355",
@@ -280,14 +331,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "3c1a8569-e119-44f3-b72c-1325a4443758",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "5c7664c0-27ac-4404-bc77-45371d8f5473",
             "ptk_id": "c62c7c2a-fbf8-417e-ba4d-91e6fc304b9d",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-03-01",
@@ -325,7 +379,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agrobisnis/Agribisnis",
                     "jenjang_pendidikan_id_str": "S2",
-                    "gelar_akademik_id_str": "Magister Pertanian"
+                    "gelar_akademik_id_str": "Magister Pertanian",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "8ea0430e-80d5-47b1-b187-d8a321e059f4",
+                    "satuan_pendidikan_formal": "Universitas Winaya Mukti",
+                    "fakultas": "Kehutanan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2005",
+                    "tahun_lulus": "2008",
+                    "nim": "4122204120008",
+                    "status_kuliah": "0",
+                    "semester": "3",
+                    "ipk": "3.00",
+                    "prodi": "b8a8a0b9-6e9e-4177-b9a3-10953aad395d",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Kehutanan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9c9909aa-fbb5-4edb-abb4-ef241e4c55e9",
@@ -342,7 +415,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Kehutanan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Kehutanan"
+                    "gelar_akademik_id_str": "Sarjana Kehutanan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "65bc7d52-b068-49d8-a618-8b40754b6a3f",
@@ -359,7 +433,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6d07c951-f583-4ae1-afab-71672ce217b1",
@@ -376,7 +451,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "dfcd16de-7a38-4486-b615-71b2c22af5bb",
@@ -393,7 +469,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -404,13 +481,16 @@
                     "tmt_pangkat": "2022-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "f6438e45-26f9-4155-b4bf-ab4c1dc997f3",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "640c214d-e4d1-45be-9b9b-f6edb0c3baf1",
             "ptk_id": "c282c37b-a1cb-45f3-a2c0-962c813b3f04",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-03-01",
@@ -448,7 +528,44 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Mesin",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Teknik"
+                    "gelar_akademik_id_str": "Sarjana Teknik",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "43acd9e1-1fc6-43ae-8df4-4a3c26579600",
+                    "satuan_pendidikan_formal": "UNIVERSITAS JENDERAL ACHMAD YANI (041021)",
+                    "fakultas": "TEKNIK MESIN",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1993",
+                    "tahun_lulus": "1998",
+                    "nim": "900104",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Teknik Mesin",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "c8272f12-520e-400f-af55-50270f83c615",
+                    "satuan_pendidikan_formal": "UNIVERSITAS JENDERAL ACHMAD YANI (041021)",
+                    "fakultas": "TEKNIK MESIN",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1993",
+                    "tahun_lulus": "1998",
+                    "nim": "900104",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Teknik Mesin",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "5cff8e25-0afe-4d24-bc62-89ad9cf30610",
@@ -465,7 +582,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Mesin Tenaga",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b66273b7-9f02-4179-9186-52f726d45317",
@@ -482,7 +600,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "d3d636fb-17c2-43d0-b089-e420dda99553",
@@ -499,7 +618,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -510,13 +630,16 @@
                     "tmt_pangkat": "2022-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "f8af7116-e745-4828-b47d-dbf8a49747c9",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "086282eb-7826-4e71-8787-d30a3f24618a",
             "ptk_id": "c0cf95b8-d18b-40b1-b660-5af1faa1746f",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2023-07-12",
@@ -536,9 +659,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "198903152023211012",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pendidikan Jasmani dan Kesehatan",
+            "bidang_studi_terakhir": "Pendidikan Jasmani",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "1c3d0089-5547-4873-8e8b-4fa31799932c",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Jasmani, Kesehatan & Rekreasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2010",
+                    "tahun_lulus": "2014",
+                    "nim": "01020401100811",
+                    "status_kuliah": "0",
+                    "semester": "7",
+                    "ipk": "3.15",
+                    "prodi": "01283a0c-a837-4b76-beb0-1467e0d232fc",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Jasmani",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "6015b3e8-f946-49e7-8c40-ab9274b8b316",
                     "satuan_pendidikan_formal": "Universitas Suryakancana",
@@ -554,7 +695,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Jasmani dan Kesehatan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2a3499fd-6586-4425-9860-a7c8352a7a9c",
@@ -571,7 +713,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Budidaya Tanaman Perkebunan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "e3a5e370-4005-48e5-92a7-62051e274228",
@@ -588,7 +731,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "225f31de-76fc-4ced-b323-96425cee6f81",
@@ -605,7 +749,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -616,13 +761,16 @@
                     "tmt_pangkat": "2023-06-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "18c99232-301b-473c-af5a-e1160bfdd1ff",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "75080d49-cb9c-4bdf-a240-04c1d1b04518",
             "ptk_id": "4452a4e9-11c7-4ca1-9708-55ac448e73de",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2017-07-03",
@@ -660,7 +808,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agrobisnis/Agribisnis",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pertanian"
+                    "gelar_akademik_id_str": "Sarjana Pertanian",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "dba79b43-1e83-4f29-8c01-61d1f210a764",
+                    "satuan_pendidikan_formal": "UNIVERSITAS TERBUKA (001031)",
+                    "fakultas": "PENYULUHAN DAN KOMUNIKASI PERTANIAN",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2019",
+                    "tahun_lulus": "2023",
+                    "nim": "041154031",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Penyuluhan dan Komunikasi Pertanian",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ed837068-eadf-4880-b85f-afcfd33e0855",
@@ -677,7 +844,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8da4b69c-ae91-4dcf-a59f-d4a9aef42ec5",
@@ -694,7 +862,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "10930ff0-c356-4fd9-a58e-c467efd8d8f8",
@@ -711,14 +880,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "3dd5c167-62e4-47fa-97b0-fc03193de53e",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "832ed7ab-236c-4685-84c9-f97148dfc731",
             "ptk_id": "27e4b969-8960-4c68-a6dc-0116d508a2c6",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2004-07-25",
@@ -756,7 +928,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Kewarganegaraan (Pkn)",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "c6978e8c-023e-4c7a-a3ff-a57ce019e870",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Pancasila Dan Kewarganegaraan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2005",
+                    "tahun_lulus": "2007",
+                    "nim": "020205233",
+                    "status_kuliah": "0",
+                    "semester": "1",
+                    "ipk": "3.00",
+                    "prodi": "a4de46dd-c19d-4110-98d5-2900a70217da",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Kewarganegaraan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -767,7 +958,8 @@
                     "tmt_pangkat": "2022-10-01",
                     "masa_kerja_gol_tahun": "13",
                     "masa_kerja_gol_bulan": "2",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "cc2a1aa6-584d-41f8-9cdc-8d60f70c0649",
@@ -776,13 +968,16 @@
                     "tmt_pangkat": "2016-01-01",
                     "masa_kerja_gol_tahun": "6",
                     "masa_kerja_gol_bulan": "5",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "adc29698-b03e-482b-a3cc-bb810b75dd66",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "fc5e5d8d-d4fe-48b7-9611-168f4cd50d55",
             "ptk_id": "3bc80f56-6fd0-49f5-824a-82caa7ec5ab9",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2016-07-02",
@@ -820,7 +1015,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Bahasa Indonesia",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "d31c89cf-1b6d-43a0-a170-ab42312516d7",
+                    "satuan_pendidikan_formal": "STKIP Siliwangi",
+                    "fakultas": "Pendidikan Bahasa Dan Sastra Indonesia",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2010",
+                    "tahun_lulus": "2014",
+                    "nim": "10210328",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "2.62",
+                    "prodi": "d7ffe098-201e-47d9-93f6-2abdade88792",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Keguruan dan Ilmu Pendidikan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8db1faaf-b2db-4cbd-92f5-9dd06498b7e3",
@@ -837,7 +1051,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknologi Informasi dan Komunikasi (TIK)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "43304226-5c5a-4ae1-8556-3d8f95cc5003",
@@ -854,7 +1069,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2ff6eaf7-7679-4c89-9119-5ff56f504ee3",
@@ -871,14 +1087,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "8bd60f89-eee4-4303-a1e0-6e65dde32c2c",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "58399b3c-b0f3-4423-a1e5-7c7b384316d1",
             "ptk_id": "8a13674d-2988-4f49-a9f8-a3f76aec4d7a",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-04-01",
@@ -916,7 +1135,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sistem Informasi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Komputer"
+                    "gelar_akademik_id_str": "Sarjana Komputer",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "23709f50-7d40-4cb9-9f2e-79be3094513d",
+                    "satuan_pendidikan_formal": "STMIK Bandung",
+                    "fakultas": "Sistem Informasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2015",
+                    "tahun_lulus": "2018",
+                    "nim": "3214066",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "3.37",
+                    "prodi": "dfdb48db-8a0b-45c0-b295-444bca520ac9",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "89b525a3-fbf9-452a-9327-4bb52173f1d2",
@@ -933,7 +1171,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b117d6cc-91d4-4f36-9c57-7e5583f9ff7a",
@@ -950,7 +1189,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "1d19947a-7cfe-4ad9-b434-8fb333cbcc65",
@@ -967,7 +1207,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -978,13 +1219,16 @@
                     "tmt_pangkat": "2022-04-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "83de7cba-1cdf-47ab-9fa6-b13460a8a344",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "13bc1159-19c8-4382-a6bc-34a683d73290",
             "ptk_id": "2c203cad-b908-43df-aa7a-cf98cbdc2495",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2016-07-02",
@@ -1004,9 +1248,27 @@
             "status_kepegawaian_id_str": "PPPK Paruh Waktu",
             "nip": "198905222025211123",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pendidikan Agama Islam",
+            "bidang_studi_terakhir": "Ilmu Pendidikan Agama Islam",
             "pangkat_golongan_terakhir": "-",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "b8fe76b3-fda7-46de-8cdc-dda35f0cfc70",
+                    "satuan_pendidikan_formal": "STAI YAMISA Soreang",
+                    "fakultas": "Pendidikan Agama Islam",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2011",
+                    "tahun_lulus": "2015",
+                    "nim": "11.AI.2.0095",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "3.20",
+                    "prodi": "8071258e-fb73-49f8-bf1c-fed7bb58970e",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Pendidikan Agama Islam",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "64106459-18b7-46bd-9b05-f477759282b5",
                     "satuan_pendidikan_formal": "STAI YAMISA Soreang",
@@ -1022,7 +1284,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Agama Islam",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan Islam"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan Islam",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9d29dcf2-2d2c-4645-b67b-10435d4fb718",
@@ -1039,7 +1302,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Teknik Otomotif",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "0210270d-8afc-4852-af23-7d736f33c33a",
@@ -1056,7 +1320,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "48e9060b-1c5d-40b9-b983-1811e4f81209",
@@ -1073,14 +1338,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "8179a7cd-510e-4c9b-9880-02ba551e8177",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "0e3d2be8-a3e0-43a7-b0fa-957aedb6eedf",
             "ptk_id": "e66a9fad-adeb-4743-a39a-b091338b168c",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2024-05-29",
@@ -1118,7 +1386,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Pancasila dan Kewarganegaraan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "8edc343f-a664-4282-8964-561dddbb4ce6",
+                    "satuan_pendidikan_formal": "STKIP PGRI Sukabumi",
+                    "fakultas": "Pendidikan Pancasila Dan Kewarganegaraan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2004",
+                    "tahun_lulus": "2008",
+                    "nim": "04610001",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "3.00",
+                    "prodi": "06cee557-70be-4bec-a56a-627c7c3cb23a",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Kewarganegaraan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9ec3fba8-1e49-4695-99a9-2aa3b74ec970",
@@ -1135,7 +1422,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "101b1734-ac61-49cd-93d4-fe67c1ff0376",
@@ -1152,7 +1440,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "a7ab8554-37e3-4e64-b723-c9279b6516a7",
@@ -1169,7 +1458,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -1180,13 +1470,16 @@
                     "tmt_pangkat": "2024-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "aa152e9e-3d78-443b-9231-6f6b3744158f",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "8a271a41-33fb-4730-8668-7885155d1074",
             "ptk_id": "96f663e8-4ff3-4e6e-936c-c756887d578a",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2017-07-03",
@@ -1224,7 +1517,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pemerintahan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan"
+                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "7b0a47a8-18f6-4e86-a827-fa65c7bdaa58",
+                    "satuan_pendidikan_formal": "Universitas Terbuka",
+                    "fakultas": "Ilmu Pemerintahan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2018",
+                    "tahun_lulus": "2022",
+                    "nim": "031260785",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "3.50",
+                    "prodi": "afd902b3-1106-4c64-bf94-547c46b77209",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Pemerintahan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "e872681f-9a38-4a80-aa4f-593e295975e4",
@@ -1241,7 +1553,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "bca37c19-88a3-4894-8301-f03339d14e7f",
@@ -1258,7 +1571,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8608755c-212a-47cc-9c55-925361e7e72b",
@@ -1275,14 +1589,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "96802ba2-fab7-4527-9628-ba36da6da3bd",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "eabbb143-9421-43ce-8520-d35f0ba0cd91",
             "ptk_id": "a2e8bef6-27f3-4092-8132-442e777a6dee",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2024-05-29",
@@ -1320,7 +1637,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Bahasa Inggris",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "42dc16e0-ad36-4a05-b321-b082c877f44e",
+                    "satuan_pendidikan_formal": "STKIP Siliwangi",
+                    "fakultas": "Pendidikan Bahasa Inggris",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2009",
+                    "tahun_lulus": "2013",
+                    "nim": "09220170",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "1.70",
+                    "prodi": "069afba8-fe5f-4b02-b56e-801cae7f0a30",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Bahasa Inggris",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2bcd4067-8a7e-4827-a60f-c0bb7558274b",
@@ -1337,7 +1673,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "D1",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "41f308b3-9ebf-4f4b-b60c-c2570bc40bb3",
@@ -1354,7 +1691,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Fisika",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ca6078eb-fe7b-4b56-ba79-ccb5109dd96b",
@@ -1371,7 +1709,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b7c9ed06-9a35-4cd7-94a0-ff7af0abe0f4",
@@ -1388,7 +1727,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -1399,13 +1739,16 @@
                     "tmt_pangkat": "2024-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "d2b3edf9-862d-4651-8336-8d7eaa399113",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "d35f512c-3134-4215-b961-b7dfeb50e424",
             "ptk_id": "28547323-17a4-e211-ab87-6d516bf148cd",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2021-02-26",
@@ -1443,7 +1786,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Matematika",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "32ce0391-750c-478d-855d-a01a83a32a7a",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Matematika",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2006",
+                    "tahun_lulus": "2009",
+                    "nim": "01020306833",
+                    "status_kuliah": "0",
+                    "semester": "4",
+                    "ipk": "3.00",
+                    "prodi": "864a05c2-c94f-46bc-afe1-aac00c3d16fe",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Matematika",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "62b3e1ae-d345-4cd1-9970-61eb87c1de8e",
@@ -1460,7 +1822,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6a4586fa-675c-4590-81dc-7817b5d24b69",
@@ -1477,7 +1840,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "332e1820-cc7c-43aa-a523-161ce77698c3",
@@ -1494,7 +1858,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -1505,13 +1870,16 @@
                     "tmt_pangkat": "2021-01-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "7d271c56-67bb-4ecb-83a7-204923a0b4ca",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "73f0ed98-7366-4d6b-8ff2-e12b52713c15",
             "ptk_id": "bfa339e7-acc8-46aa-bc94-88a755c9ae6d",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2014-07-02",
@@ -1549,7 +1917,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Kehutanan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "610e0934-4e06-4939-adfb-0f39aca0f9a2",
@@ -1566,7 +1935,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "a5239f5f-6ff5-428b-b98a-ae07967b4ffa",
@@ -1583,14 +1953,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "f478235b-3116-475a-bfb0-92c64edd24a0",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "215b556e-07c8-49e2-b6e7-84647e71a760",
             "ptk_id": "7992abad-bdcc-4dd3-8ab1-2832d3f56b57",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2020-07-13",
@@ -1628,7 +2001,44 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sistem Informasi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Komputer"
+                    "gelar_akademik_id_str": "Sarjana Komputer",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "d66d464a-4aed-47b8-ad25-c2e5b6801af0",
+                    "satuan_pendidikan_formal": "SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER BANDUNG",
+                    "fakultas": "SISTEM INFORMASI",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2020",
+                    "tahun_lulus": "2024",
+                    "nim": "3220032",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Sistem Informasi",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "12f53c61-77bc-4426-ace1-c3453fb0c3ad",
+                    "satuan_pendidikan_formal": "SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER BANDUNG",
+                    "fakultas": "SISTEM INFORMASI",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2020",
+                    "tahun_lulus": "2024",
+                    "nim": "3220032",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Sistem Informasi",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "01bb8d0c-d0be-4c58-9750-062347741f93",
@@ -1645,7 +2055,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "7589b6aa-23d1-41a9-9d96-9d63d77f34da",
@@ -1662,7 +2073,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "e219589e-5919-45f5-a534-bc5e302c8873",
@@ -1679,14 +2091,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "9d8ef87e-88ad-469d-b175-08c20fcae9cd",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "4a3f05e7-884f-4639-91b5-4d3d9f9ffc67",
             "ptk_id": "748d2222-18c1-4446-8689-154df06f260c",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2021-02-26",
@@ -1724,7 +2139,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknologi Hasil Hutan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Kehutanan"
+                    "gelar_akademik_id_str": "Sarjana Kehutanan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "5456399f-9a97-48c6-8de0-2f3b5f94e8b0",
@@ -1741,7 +2157,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "f6e923df-9436-44ea-a317-7a2b17b04078",
@@ -1758,7 +2175,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8851ae2d-1995-4166-af35-ad9a2f29e1e3",
@@ -1775,7 +2193,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -1786,13 +2205,16 @@
                     "tmt_pangkat": "2021-01-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "cb63f96f-d937-425a-985d-9e5c218df30b",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "3738925a-e5fe-4069-a31f-552323f91d09",
             "ptk_id": "75778675-e74c-408c-ab79-ce29a6865244",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2023-09-05",
@@ -1812,9 +2234,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "198206062023211014",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pendidikan Agama Islam",
+            "bidang_studi_terakhir": "Ilmu Pendidikan Agama Islam",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "2bf3e85d-ecd9-4e83-aec9-666077f9ad20",
+                    "satuan_pendidikan_formal": "STAI YAMISA Soreang",
+                    "fakultas": "Pendidikan Agama Islam",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2011",
+                    "tahun_lulus": "2016",
+                    "nim": "11.AI.2.0390",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "3.20",
+                    "prodi": "0cdaa352-a43f-4dcf-953e-9a67034ceda2",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Pendidikan Agama Islam",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "bcd62817-8949-41f3-8409-8765cce5c8c6",
                     "satuan_pendidikan_formal": "STAI YAMISA Soreang",
@@ -1830,7 +2270,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Agama Islam",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan Islam"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan Islam",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "e19b2360-74a3-4d0b-9d02-7ff86a67eeab",
@@ -1847,7 +2288,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "Paket C",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "184d4ccb-dfd7-4bea-9a2b-8ccf6f7d9a33",
@@ -1864,7 +2306,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "41219178-f598-4c58-b033-e42efde0a92c",
@@ -1881,7 +2324,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -1892,13 +2336,16 @@
                     "tmt_pangkat": "2023-06-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "3f93ce8b-4805-49a1-bab3-7a30a20ae015",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "78ec085b-9626-4b54-9310-f44f9d4fb826",
             "ptk_id": "553ced1b-1ee6-499e-863d-55c76ae5f373",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2008-01-01",
@@ -1936,7 +2383,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Bahasa dan Sastra Indonesia",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "a4a1dded-a830-4d4e-976d-d04c0f8d4812",
@@ -1953,7 +2401,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "200b4cee-410e-49f9-91be-a48416509ab4",
@@ -1970,7 +2419,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "38606984-803c-4200-b90a-84751faa6c2b",
@@ -1987,7 +2437,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -1998,7 +2449,8 @@
                     "tmt_pangkat": "2024-06-01",
                     "masa_kerja_gol_tahun": "21",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IV/a"
+                    "pangkat_golongan_id_str": "IV/a",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "3a4abbda-43cc-4c5d-8e7a-fd2ac02079a9",
@@ -2007,7 +2459,8 @@
                     "tmt_pangkat": "2017-10-01",
                     "masa_kerja_gol_tahun": "14",
                     "masa_kerja_gol_bulan": "4",
-                    "pangkat_golongan_id_str": "III/d"
+                    "pangkat_golongan_id_str": "III/d",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "bbbd8366-c356-4e4d-94a8-cf5e355aafce",
@@ -2016,7 +2469,8 @@
                     "tmt_pangkat": "2014-10-01",
                     "masa_kerja_gol_tahun": "11",
                     "masa_kerja_gol_bulan": "4",
-                    "pangkat_golongan_id_str": "III/c"
+                    "pangkat_golongan_id_str": "III/c",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "d630aff6-1269-4273-a6d6-f186913b18f9",
@@ -2025,7 +2479,8 @@
                     "tmt_pangkat": "2012-04-01",
                     "masa_kerja_gol_tahun": "8",
                     "masa_kerja_gol_bulan": "10",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "1a2c91ce-4fdd-4bff-a53b-1ef6401cdffe",
@@ -2034,13 +2489,16 @@
                     "tmt_pangkat": "2010-03-01",
                     "masa_kerja_gol_tahun": "4",
                     "masa_kerja_gol_bulan": "7",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "699711f4-d1d2-4d8d-92ba-393c47ad2cd7",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "940f008f-4d0c-447f-8dbb-ceba5ac73681",
             "ptk_id": "278f1a2d-b6bc-478d-8b59-3556ee4b4eb4",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-04-01",
@@ -2078,7 +2536,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Budidaya Pertanian",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pertanian"
+                    "gelar_akademik_id_str": "Sarjana Pertanian",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "fed1f1c3-aecd-4bf2-a299-e202932801b8",
+                    "satuan_pendidikan_formal": "Universitas Nusa Bangsa",
+                    "fakultas": "Agroteknologi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2013",
+                    "tahun_lulus": "2017",
+                    "nim": "41205421113001",
+                    "status_kuliah": "0",
+                    "semester": "7",
+                    "ipk": "3.28",
+                    "prodi": "aca812b0-6a2e-42a0-81b6-2ba673c33c4e",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agroekoteknologi",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b592bf5d-4b2f-4daa-b4b9-09f4699801ff",
@@ -2095,7 +2572,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agribisnis Tanaman Pangan&Hortikultura",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6af57446-bc26-489a-b954-7afa912bb48e",
@@ -2112,7 +2590,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "4ba86b83-4306-4755-9fa2-0782c921b8a0",
@@ -2129,7 +2608,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -2140,13 +2620,16 @@
                     "tmt_pangkat": "2022-04-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "33b9e57e-ab85-4642-803d-8f3b148753ce",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "e5b06ffd-7cef-4774-a6f8-b0f9a7ebf96c",
             "ptk_id": "1d59d5b2-f66f-48b5-8224-869739cfc6fe",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2021-02-26",
@@ -2166,9 +2649,45 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "197812072021212003",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Agrobisnis/Agribisnis",
+            "bidang_studi_terakhir": "Agribisnis",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "63443ea1-9773-4766-8c39-7fd921695965",
+                    "satuan_pendidikan_formal": "UNIVERSITAS WINAYA MUKTI (041022)",
+                    "fakultas": "AGRIBISNIS",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1996",
+                    "tahun_lulus": "2002",
+                    "nim": "4122196120038",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agribisnis",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "73baff73-3b91-43ef-bf9d-904eb1458e57",
+                    "satuan_pendidikan_formal": "UNIVERSITAS WINAYA MUKTI (041022)",
+                    "fakultas": "AGRIBISNIS",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1996",
+                    "tahun_lulus": "2002",
+                    "nim": "4122196120038",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agribisnis",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "bf9a399b-99e2-4504-b67a-b8736b7cfc95",
                     "satuan_pendidikan_formal": "Universitas Winaya Mukti",
@@ -2184,7 +2703,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agrobisnis/Agribisnis",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pertanian"
+                    "gelar_akademik_id_str": "Sarjana Pertanian",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "c684c5c5-2dc8-438e-bf73-a07f169eda17",
@@ -2201,7 +2721,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "62d13237-ddc2-42e6-b5a8-b3d7b559ba1a",
@@ -2218,7 +2739,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "c9cf9990-b16f-4573-8f45-973bc31de076",
@@ -2235,7 +2757,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -2246,13 +2769,16 @@
                     "tmt_pangkat": "2021-01-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "75f21332-b8a5-40e3-be56-4b0b28ded97b",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "87494af5-6a07-4368-b392-4e0fe6912a61",
             "ptk_id": "dae4d82d-3da7-4d69-919f-05fbf75642a9",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2016-07-02",
@@ -2290,7 +2816,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "969b42a0-4448-4081-b5e8-7e1d5bacef12",
@@ -2307,7 +2834,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2a13e2a4-c0b9-4d82-8a9c-0f4604500b0a",
@@ -2324,14 +2852,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "b0b6e816-0645-4cc2-99f0-f0dfd3c0f667",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "f77f5a96-b369-4425-8430-129573c11a88",
             "ptk_id": "4bb458ed-e165-4e01-b0de-099ee4f09272",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2009-07-13",
@@ -2369,7 +2900,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "Paket C",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "0f1175c9-0916-4f01-bb55-53d538f25032",
@@ -2386,7 +2918,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "fd289537-163f-45ec-ad09-9d83b4133df7",
@@ -2403,14 +2936,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "146a9fad-c64f-49cf-b853-7e741ec99395",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "dc9b213d-b322-4338-8644-7e50312a9550",
             "ptk_id": "5bbcacfa-82e7-40d2-920d-122566921699",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2016-09-01",
@@ -2448,7 +2984,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "38242c52-0552-454c-a5d5-05020c68c173",
@@ -2465,7 +3002,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "50dfbab4-ab82-477b-a670-df40320f3135",
@@ -2482,14 +3020,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "124196d7-375a-4ed2-8f2a-73945ada6ad1",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "87fbf527-6076-4d28-9e8d-ef80b8ad9537",
             "ptk_id": "e1ecd9a6-d9a4-4a04-babc-d1bb0df8a242",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2025-06-03",
@@ -2527,7 +3068,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Matematika",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "6a1e1659-7bb5-4e38-847f-f803e0656883",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Matematika",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2006",
+                    "tahun_lulus": "2011",
+                    "nim": "01020306797",
+                    "status_kuliah": "0",
+                    "semester": "6",
+                    "ipk": "3.75",
+                    "prodi": "fea12623-ce0c-4334-87f1-38c3e77e4806",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Matematika",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ffdb83e6-fb56-4715-a7d4-74681632a567",
@@ -2544,7 +3104,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "c7f88ced-a63c-4d72-9dfe-6505b1a01320",
@@ -2561,7 +3122,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "645d3bfe-cba1-4ce9-9ced-bd46861af213",
@@ -2578,7 +3140,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -2589,13 +3152,16 @@
                     "tmt_pangkat": "2025-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "655eef05-8fe9-42ec-9c6d-d7d2b7317609",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "8eae0355-f109-4da1-88d6-f182837c2c0a",
             "ptk_id": "818a8c51-7e11-47c9-bf4a-828beb9f556d",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2023-07-12",
@@ -2633,7 +3199,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sastra Inggris",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Sastra"
+                    "gelar_akademik_id_str": "Sarjana Sastra",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "94dac404-6234-475f-8538-ee32702ea058",
+                    "satuan_pendidikan_formal": "Universitas Pasundan",
+                    "fakultas": "Sastra Inggris",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2003",
+                    "tahun_lulus": "2007",
+                    "nim": "037010013",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": "042a7866-94cc-4281-9e6c-213ba96c6660",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Bahasa dan Kebudayaan Inggris",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "cddc414b-81c7-46ef-b94d-635bd38eaba3",
@@ -2650,7 +3235,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "a1cd0133-1857-4743-9caf-20d327b1d4df",
@@ -2667,7 +3253,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8135e4c5-5116-4df1-ac42-3c8188fd71bd",
@@ -2684,7 +3271,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -2695,13 +3283,16 @@
                     "tmt_pangkat": "2023-06-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "1e13a62f-8b59-40de-adde-431b9362a278",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "d46dbbb1-d75d-4e18-8a62-9e51a9ed98b9",
             "ptk_id": "bf246a88-3624-4d4f-a441-bd73eed7e50c",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-03-01",
@@ -2721,9 +3312,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "198301092022212014",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pendidikan Pancasila dan Kewarganegaraan",
+            "bidang_studi_terakhir": "Pendidikan Kewarganegaraan",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "a254352d-800c-4aa8-82f0-15b76a5ee638",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Pancasila Dan Kewarganegaraan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2005",
+                    "tahun_lulus": "2007",
+                    "nim": "020205247",
+                    "status_kuliah": "0",
+                    "semester": "1",
+                    "ipk": "3.00",
+                    "prodi": "3bf0bde0-a6b0-4eca-95e1-949e1fccb2e6",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Kewarganegaraan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "81ed4c60-8123-4d4f-87d3-482dad3b02a7",
                     "satuan_pendidikan_formal": "Universitas Suryakancana",
@@ -2739,7 +3348,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Pancasila dan Kewarganegaraan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "5d4151ca-8dd1-4e03-bb0e-6786a77dfcf6",
@@ -2756,7 +3366,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b4b0adda-5f12-4437-8f1c-d6fc43ed25b5",
@@ -2773,7 +3384,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "5b154b3d-df73-4c8e-ae48-f05219a9bbfb",
@@ -2790,7 +3402,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -2801,13 +3414,16 @@
                     "tmt_pangkat": "2022-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "562be4bb-f0a2-4d9c-a32e-a87abafa60a9",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "6fc39045-f27c-4053-b34d-e710860fda21",
             "ptk_id": "cc276b47-9eaa-41d7-be59-92c04d09d925",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2024-05-29",
@@ -2827,9 +3443,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "198605182024211006",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pendidikan Bahasa Inggris",
+            "bidang_studi_terakhir": "Bahasa Inggris",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "d0077431-8aff-48c5-b76d-9dc562f39cfc",
+                    "satuan_pendidikan_formal": "STKIP Siliwangi Bandung",
+                    "fakultas": "Pendidikan Bahasa Inggris",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2007",
+                    "tahun_lulus": "2010",
+                    "nim": "07220070",
+                    "status_kuliah": "0",
+                    "semester": "6",
+                    "ipk": "3.02",
+                    "prodi": "069afba8-fe5f-4b02-b56e-801cae7f0a30",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Bahasa Inggris",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "60655545-2b8c-449e-bb05-eff205bd9eaf",
                     "satuan_pendidikan_formal": "STKIP Siliwangi",
@@ -2845,7 +3479,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Bahasa Inggris",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8674b9ad-da5b-4a67-8fa3-bdf07bd9fcaa",
@@ -2862,7 +3497,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "03dff49a-0d2f-414e-afa7-bca662c751c8",
@@ -2879,7 +3515,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "13757c92-fe0d-4786-a5f8-37e4081a7291",
@@ -2896,7 +3533,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -2907,13 +3545,16 @@
                     "tmt_pangkat": "2024-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "a2093da2-1245-4bbc-af5a-bb24e8c927a8",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "8d31051e-53a3-4334-b7e6-124634f892b2",
             "ptk_id": "5d2f7740-2ce7-4979-92f7-ac0ca86fe9bd",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2011-03-28",
@@ -2951,7 +3592,62 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Matematika",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "345ca104-dd2f-4c3e-bfab-7bbaa8ca8171",
+                    "satuan_pendidikan_formal": "UNIVERSITAS SURYAKANCANA (041030)",
+                    "fakultas": "PENDIDIKAN MATEMATIKA",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2001",
+                    "tahun_lulus": "2005",
+                    "nim": "01510290",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Matematika",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "4684f49c-9fd9-49a3-88ff-8a1ed13976db",
+                    "satuan_pendidikan_formal": "UNIVERSITAS SURYAKANCANA (041030)",
+                    "fakultas": "PENDIDIKAN MATEMATIKA",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2001",
+                    "tahun_lulus": "2005",
+                    "nim": "01510290",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Matematika",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "7ff1595a-08be-447d-a627-984ef3d79bac",
+                    "satuan_pendidikan_formal": "UNIVERSITAS SURYAKANCANA (041030)",
+                    "fakultas": "PENDIDIKAN MATEMATIKA",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2001",
+                    "tahun_lulus": "2005",
+                    "nim": "01510290",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Matematika",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -2962,7 +3658,8 @@
                     "tmt_pangkat": "2022-10-01",
                     "masa_kerja_gol_tahun": "11",
                     "masa_kerja_gol_bulan": "9",
-                    "pangkat_golongan_id_str": "III/d"
+                    "pangkat_golongan_id_str": "III/d",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "398b2305-5526-4fd4-91f2-b488b57c05b5",
@@ -2971,7 +3668,8 @@
                     "tmt_pangkat": "2018-04-01",
                     "masa_kerja_gol_tahun": "7",
                     "masa_kerja_gol_bulan": "3",
-                    "pangkat_golongan_id_str": "III/c"
+                    "pangkat_golongan_id_str": "III/c",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "bb53bd70-5835-473d-b867-497390a537f1",
@@ -2980,13 +3678,16 @@
                     "tmt_pangkat": "2014-10-01",
                     "masa_kerja_gol_tahun": "3",
                     "masa_kerja_gol_bulan": "9",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "921c42d9-77a1-475a-8ca5-e1f13347f649",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "43663ab9-5923-4948-bfed-6ca7133109b7",
             "ptk_id": "39af9550-d89b-4338-9ba1-bd298a2fc39e",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2024-05-29",
@@ -3024,7 +3725,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Bahasa Inggris",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "e4ef9fe8-dcf7-4176-8404-87a1501c9d24",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Bahasa Inggris",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2015",
+                    "tahun_lulus": "2019",
+                    "nim": "8820315011",
+                    "status_kuliah": "0",
+                    "semester": "9",
+                    "ipk": "3.28",
+                    "prodi": "259a5100-7c11-4276-be6f-4ab83498a44c",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Bahasa Inggris",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6d5b00bc-98c6-408e-9a7c-f441c7edf416",
@@ -3041,7 +3761,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "aa5d832c-06f0-4246-87da-8d0e4f0b6a8d",
@@ -3058,7 +3779,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "0357beec-20d9-459a-8e8d-0d8ab74ad48f",
@@ -3075,7 +3797,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -3086,13 +3809,16 @@
                     "tmt_pangkat": "2024-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "8b89abbc-e07d-425b-b585-be1ad2a93eed",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "5d25b475-062d-4723-8b72-4f2aa4a6a178",
             "ptk_id": "7b3ec668-cd7e-4397-9ce0-28e852d658b1",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2017-07-03",
@@ -3130,7 +3856,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Perpustakaan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Ilmu Perpustakaan"
+                    "gelar_akademik_id_str": "Sarjana Ilmu Perpustakaan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "3ec7ab56-fca5-4b4c-ac1c-e42c329d9567",
+                    "satuan_pendidikan_formal": "Universitas Terbuka",
+                    "fakultas": "Ilmu Perpustakaan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2014",
+                    "tahun_lulus": "2016",
+                    "nim": "019456207",
+                    "status_kuliah": "0",
+                    "semester": "4",
+                    "ipk": "3.12",
+                    "prodi": "eeffb048-985d-4c4d-9451-f328017a0dfb",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Perpustakaan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "cc711c65-83b1-441a-a6b7-6c10323336d6",
@@ -3147,7 +3892,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "425195ef-0ad4-4b4f-9f5e-477cf3d49d3c",
@@ -3164,7 +3910,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b70acb6d-63e2-42ae-b5db-a6ec347a4c19",
@@ -3181,14 +3928,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "f51b1818-89b8-475c-a7ed-f2ec2ecd17a0",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "b97500ba-e6ad-4893-ab85-4639bd1fee74",
             "ptk_id": "79377628-78bc-472b-adb0-702f36ac9e2c",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2015-07-02",
@@ -3208,9 +3958,27 @@
             "status_kepegawaian_id_str": "PPPK Paruh Waktu",
             "nip": "199202072025212128",
             "pendidikan_terakhir": "D4",
-            "bidang_studi_terakhir": "Produksi Benih",
+            "bidang_studi_terakhir": "Lainnya",
             "pangkat_golongan_terakhir": "-",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "02360035-0a94-4648-9716-11cf7fcd3624",
+                    "satuan_pendidikan_formal": "POLITEKNIK NEGERI JEMBER (005019)",
+                    "fakultas": "TEKNIK PRODUKSI BENIH",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2010",
+                    "tahun_lulus": "2014",
+                    "nim": "A4110859",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Lainnya",
+                    "jenjang_pendidikan_id_str": "D4",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "eb18b096-a5e8-4985-99b8-77fd28d4ae9c",
                     "satuan_pendidikan_formal": "Politeknik Negeri Jember",
@@ -3226,7 +3994,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Produksi Benih",
                     "jenjang_pendidikan_id_str": "D4",
-                    "gelar_akademik_id_str": "Sarjana Sains Terapan"
+                    "gelar_akademik_id_str": "Sarjana Sains Terapan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6e03ef72-eff2-497c-9828-2371e15e156a",
@@ -3243,7 +4012,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "4f105c37-2075-42fa-a055-9103f28919f9",
@@ -3260,7 +4030,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b1524ce6-4906-4722-a23f-775e2577f2c8",
@@ -3277,14 +4048,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "02ead358-734e-4320-945c-e4b946fef380",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "04b8527f-7733-43ab-8e29-6727975de35e",
             "ptk_id": "81186153-fdbc-41cc-b48d-2a65353efb2e",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-04-01",
@@ -3304,9 +4078,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "199712052022211003",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Sistem Informasi",
+            "bidang_studi_terakhir": "Ilmu Komputer",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "b52a8cac-ddfa-46a3-acb7-db2a82fa9a36",
+                    "satuan_pendidikan_formal": "STMIK Bandung",
+                    "fakultas": "Sistem Informasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2015",
+                    "tahun_lulus": "2018",
+                    "nim": "3215016",
+                    "status_kuliah": "0",
+                    "semester": "7",
+                    "ipk": "3.41",
+                    "prodi": "dfdb48db-8a0b-45c0-b295-444bca520ac9",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "e02b07e6-9333-442c-953d-e337f497260c",
                     "satuan_pendidikan_formal": "STMIK Bandung",
@@ -3322,7 +4114,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sistem Informasi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Komputer"
+                    "gelar_akademik_id_str": "Sarjana Komputer",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "30179eb1-58b1-4f15-bea3-1c32bd733144",
@@ -3339,7 +4132,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "337d8d23-aa8d-4d66-ab45-5265fe18c24c",
@@ -3356,7 +4150,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2991a58e-5938-49d2-a0a0-b2edc9149a35",
@@ -3373,7 +4168,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -3384,13 +4180,16 @@
                     "tmt_pangkat": "2022-04-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "332f2011-d750-404c-98c1-56ead527274b",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "28067d49-c22f-4f6d-8e35-8033ba8b591b",
             "ptk_id": "81d0f598-6377-4fb3-8a18-30529d9e1736",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-07-01",
@@ -3410,9 +4209,27 @@
             "status_kepegawaian_id_str": "PPPK Paruh Waktu",
             "nip": "198902232025212096",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Agrobisnis/Agribisnis",
+            "bidang_studi_terakhir": "Agribinis",
             "pangkat_golongan_terakhir": "-",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "c5d7a53e-d0b6-4b0a-8968-85bd7081a4d4",
+                    "satuan_pendidikan_formal": "Universitas Terbuka",
+                    "fakultas": "Agribisnis",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2017",
+                    "tahun_lulus": "2022",
+                    "nim": "030278691",
+                    "status_kuliah": "0",
+                    "semester": "9",
+                    "ipk": "3.20",
+                    "prodi": "ccc0df22-38db-49a9-9cc4-f31089b4b832",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agribinis",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "e3d8b724-65c6-4c63-9852-b20d32f921bc",
                     "satuan_pendidikan_formal": "Universitas Terbuka",
@@ -3428,7 +4245,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agrobisnis/Agribisnis",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pertanian"
+                    "gelar_akademik_id_str": "Sarjana Pertanian",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "c3d1fb99-9e14-4b67-b27c-2bd742da6bf8",
@@ -3445,7 +4263,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Produksi Tanaman",
                     "jenjang_pendidikan_id_str": "D1",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "87416e87-69ef-4156-a24a-cf0b4b8fb70b",
@@ -3462,7 +4281,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Budidaya Tanaman",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "77ae7bf1-2348-4422-8ba1-b33265ce296c",
@@ -3479,7 +4299,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2e6b2d9d-e08c-41bb-967c-4a6357a0969c",
@@ -3496,14 +4317,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "ca7730d0-05dc-4295-b1f3-f0167bc2464e",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "e1dd1041-09e3-4686-af25-3a32d87ea356",
             "ptk_id": "90a0df9e-67ab-4a5c-8d0a-4c1025d82dc6",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2023-07-12",
@@ -3523,9 +4347,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "197810192023212004",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pengolahan Hasil Hutan",
+            "bidang_studi_terakhir": "Teknologi Hasil Hutan",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "3f1ef3c0-9ade-451f-bc2a-827470e3bd45",
+                    "satuan_pendidikan_formal": "INSTITUT PERTANIAN BOGOR 002003",
+                    "fakultas": "TEKNOLOGI HASIL HUTAN",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1997",
+                    "tahun_lulus": "2002",
+                    "nim": "E02497037",
+                    "status_kuliah": "0",
+                    "semester": "9",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Teknologi Hasil Hutan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "2bdac064-29be-4fc5-b534-9c8799b5a5cc",
                     "satuan_pendidikan_formal": "Institut Pertanian Bogor",
@@ -3541,7 +4383,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pengolahan Hasil Hutan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Kehutanan"
+                    "gelar_akademik_id_str": "Sarjana Kehutanan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "038e621a-c873-426c-bfba-a7d92d071fea",
+                    "satuan_pendidikan_formal": "INSTITUT PERTANIAN BOGOR 002003",
+                    "fakultas": "TEKNOLOGI HASIL HUTAN",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1997",
+                    "tahun_lulus": "2002",
+                    "nim": "E02497037",
+                    "status_kuliah": "0",
+                    "semester": "9",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Teknologi Hasil Hutan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "c24ba03e-fc04-44a3-a0c8-be8dae9f5506",
@@ -3558,7 +4419,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "e4275d3b-6b21-4cd3-990d-fdbf840c77ca",
@@ -3575,7 +4437,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "07c1cf2f-2e89-436b-bcac-ee9eb4df28cb",
@@ -3592,14 +4455,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "d3fb1cd4-030a-4108-9dec-6c9d0a6294e4",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "851444fb-7902-4d3e-a766-db022455b3f6",
             "ptk_id": "94c24db6-d50a-4c5b-8b50-d06a9c9e5c78",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2006-07-25",
@@ -3637,7 +4503,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Dakwah (Ushuluddin)",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Sosial Islam"
+                    "gelar_akademik_id_str": "Sarjana Sosial Islam",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -3648,7 +4515,8 @@
                     "tmt_pangkat": "2022-04-01",
                     "masa_kerja_gol_tahun": "18",
                     "masa_kerja_gol_bulan": "3",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "cee67552-8b38-4bca-a25b-2d745cee4273",
@@ -3657,13 +4525,16 @@
                     "tmt_pangkat": "2016-01-01",
                     "masa_kerja_gol_tahun": "12",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "c5c2dd80-7afd-4d5c-83ff-ce302849cd1d",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "888f75f3-5dca-4d8a-ac54-abad9b42f91c",
             "ptk_id": "b963396c-a9de-45a9-8683-ac22920ff4b5",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2004-07-25",
@@ -3701,7 +4572,44 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Manajemen Keuangan dan Perbankan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Ekonomi"
+                    "gelar_akademik_id_str": "Sarjana Ekonomi",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "6cc4ac21-9e2a-40ec-9d28-50fb32712ce4",
+                    "satuan_pendidikan_formal": "INSTITUT MANAJEMEN KOPERASI INDONESIA (042001)",
+                    "fakultas": "MANAJEMEN",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1998",
+                    "tahun_lulus": "2003",
+                    "nim": "1298051",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Manajemen",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "1abbacad-1ec7-4e57-9962-e32566c98598",
+                    "satuan_pendidikan_formal": "INSTITUT MANAJEMEN KOPERASI INDONESIA (042001)",
+                    "fakultas": "MANAJEMEN",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1998",
+                    "tahun_lulus": "2003",
+                    "nim": "1298051",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Manajemen",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -3712,7 +4620,8 @@
                     "tmt_pangkat": "2020-10-01",
                     "masa_kerja_gol_tahun": "16",
                     "masa_kerja_gol_bulan": "2",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "0340d8e4-d7b1-4895-816e-60c5cf39faf2",
@@ -3721,13 +4630,16 @@
                     "tmt_pangkat": "2016-01-01",
                     "masa_kerja_gol_tahun": "11",
                     "masa_kerja_gol_bulan": "5",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "23480223-75ee-4f4c-a9ea-9967104b8f4e",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "bb3ca68a-07f0-4f68-af49-42eeb064e0b0",
             "ptk_id": "cbdcd542-3088-443d-b04e-1b94c28da3cb",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-03-01",
@@ -3747,9 +4659,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "198606112022211011",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pendidikan Jasmani dan Kesehatan",
+            "bidang_studi_terakhir": "Pendidikan Jasmani",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "13f17f9f-9d97-463f-a078-8ac65996d6a0",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Jasmani, Kesehatan & Rekreasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2008",
+                    "tahun_lulus": "2012",
+                    "nim": "01020401080568",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "3.16",
+                    "prodi": "01283a0c-a837-4b76-beb0-1467e0d232fc",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Jasmani",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "e5c14ccc-8244-47bf-b752-f323572844eb",
                     "satuan_pendidikan_formal": "Universitas Suryakancana",
@@ -3765,7 +4695,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Jasmani dan Kesehatan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "5ecd2979-7afa-4a66-9d15-64db87fed9bd",
@@ -3782,7 +4713,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "112e25f1-5387-450a-aa2d-ea4ae628eb52",
@@ -3799,7 +4731,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "a07817c0-3de0-4e84-a43e-63a65d181bd8",
@@ -3816,7 +4749,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -3827,13 +4761,16 @@
                     "tmt_pangkat": "2022-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "6f44f911-821a-4f70-99e1-c6b6b058d8d8",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "d1b06f80-3045-48ac-bce0-66b0fbe9c795",
             "ptk_id": "6aeee229-6c7f-469e-a367-0a67797e2816",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2023-07-12",
@@ -3857,6 +4794,24 @@
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
                 {
+                    "riwayat_pendidikan_formal_id": "00c15586-bc12-470a-ba31-5c38b49d178a",
+                    "satuan_pendidikan_formal": "STISIP Guna Nusantara",
+                    "fakultas": "Ilmu Pemerintahan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2012",
+                    "tahun_lulus": "2017",
+                    "nim": "652011217",
+                    "status_kuliah": "0",
+                    "semester": "9",
+                    "ipk": "3.00",
+                    "prodi": "afd902b3-1106-4c64-bf94-547c46b77209",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Pemerintahan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
                     "riwayat_pendidikan_formal_id": "d9a95fae-51a7-4e42-b28e-861d750fd170",
                     "satuan_pendidikan_formal": "STISIP Guna Nusantara",
                     "fakultas": "",
@@ -3871,7 +4826,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pemerintahan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan"
+                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "4da0872c-0e5c-4650-9c7c-3c7d93f2c5b8",
@@ -3888,7 +4844,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b4a9f1fb-2d16-4466-b411-453f7f7dd2ee",
@@ -3905,7 +4862,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "23b89284-88cd-42d5-854a-a049752526db",
@@ -3922,14 +4880,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "76923cb0-c07d-45ac-a1a8-7391f4119c80",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "041d0de8-0fd4-46c6-8d1e-d464396c1ce5",
             "ptk_id": "b00beac5-a6c9-490d-b571-3ff4294422ea",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2014-07-02",
@@ -3967,7 +4928,62 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Manajemen Pendidikan",
                     "jenjang_pendidikan_id_str": "S2",
-                    "gelar_akademik_id_str": "Magister Pendidikan"
+                    "gelar_akademik_id_str": "Magister Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "3d9b5c1d-b1a1-4ba8-8bf4-44d229a4f23b",
+                    "satuan_pendidikan_formal": "UNIVERSITAS WINAYA MUKTI (041022)",
+                    "fakultas": "AGRONOMI",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1995",
+                    "tahun_lulus": "1999",
+                    "nim": "4122194110108",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agronomi",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "62e606bb-74cd-4edc-aefa-350eb8aca0e9",
+                    "satuan_pendidikan_formal": "UNIVERSITAS WINAYA MUKTI (041022)",
+                    "fakultas": "AGRONOMI",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1995",
+                    "tahun_lulus": "1999",
+                    "nim": "4122194110108",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agronomi",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "1716733b-b150-487f-bb8a-635cba09ae5c",
+                    "satuan_pendidikan_formal": "UNIVERSITAS WINAYA MUKTI (041022)",
+                    "fakultas": "AGRONOMI",
+                    "kependidikan": "0",
+                    "tahun_masuk": "1995",
+                    "tahun_lulus": "1999",
+                    "nim": "4122194110108",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agronomi",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2777c644-5228-4fb6-af52-81f6474a416d",
@@ -3984,7 +5000,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agronomi Pertanian",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pertanian"
+                    "gelar_akademik_id_str": "Sarjana Pertanian",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8ba83805-12a6-411f-9004-3dfcf3e02dbf",
@@ -4001,7 +5018,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ed96faef-d746-424f-a2b9-780175845efe",
@@ -4018,7 +5036,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "f5676331-2fe6-4ba3-ac27-49f64ffaa9c3",
@@ -4035,7 +5054,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -4046,7 +5066,8 @@
                     "tmt_pangkat": "2024-06-01",
                     "masa_kerja_gol_tahun": "20",
                     "masa_kerja_gol_bulan": "11",
-                    "pangkat_golongan_id_str": "IV/a"
+                    "pangkat_golongan_id_str": "IV/a",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "f0cef4b1-6151-4553-be8a-a6cfd95ca258",
@@ -4055,7 +5076,8 @@
                     "tmt_pangkat": "2016-10-01",
                     "masa_kerja_gol_tahun": "13",
                     "masa_kerja_gol_bulan": "3",
-                    "pangkat_golongan_id_str": "III/d"
+                    "pangkat_golongan_id_str": "III/d",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "c890d943-14c6-4952-b18d-68dc851ddada",
@@ -4064,13 +5086,16 @@
                     "tmt_pangkat": "2015-08-29",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "III/c"
+                    "pangkat_golongan_id_str": "III/c",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "1a15c7d3-89b9-49bb-99e1-dfc94ef860e7",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "07b0ff30-94af-417a-94c5-7b364babddb9",
             "ptk_id": "4c2faf38-9bf2-4cdd-8041-c3f2338c6b8f",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-03-01",
@@ -4094,6 +5119,24 @@
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
                 {
+                    "riwayat_pendidikan_formal_id": "c03e0be7-b3cf-497e-af25-a4f74c125795",
+                    "satuan_pendidikan_formal": "UNIVERSITAS KOMPUTER INDONESIA (041027)",
+                    "fakultas": "TEKNIK KOMPUTER",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2002",
+                    "tahun_lulus": "2008",
+                    "nim": "10201011",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Teknik Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
                     "riwayat_pendidikan_formal_id": "bf82cbed-2c9f-4280-ba0c-aea2350b8608",
                     "satuan_pendidikan_formal": "Universitas Komputer Indonesia",
                     "fakultas": "",
@@ -4108,7 +5151,44 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Komputer"
+                    "gelar_akademik_id_str": "Sarjana Komputer",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "ec0bf984-fff1-4ddb-9e34-bff3f13dca31",
+                    "satuan_pendidikan_formal": "UNIVERSITAS KOMPUTER INDONESIA (041027)",
+                    "fakultas": "TEKNIK KOMPUTER",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2002",
+                    "tahun_lulus": "2008",
+                    "nim": "10201011",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Teknik Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "e6bc8706-aa9a-4947-af55-f30323a86a87",
+                    "satuan_pendidikan_formal": "UNIVERSITAS KOMPUTER INDONESIA (041027)",
+                    "fakultas": "TEKNIK KOMPUTER",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2002",
+                    "tahun_lulus": "2008",
+                    "nim": "10201011",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Teknik Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b0f74f34-5a2f-4681-9dcf-42f6792bfb66",
@@ -4125,7 +5205,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Elektronika Komunikasi",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "337d890b-a03f-4713-82d0-98601801874b",
@@ -4142,7 +5223,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "cfa8c3a0-ba22-4db5-86bd-28f6ad1167bc",
@@ -4159,7 +5241,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -4170,13 +5253,16 @@
                     "tmt_pangkat": "2022-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "52ff7e8c-0534-4db5-aaef-6856cbd27be7",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "a0247e7e-c424-4661-82f4-731733261eeb",
             "ptk_id": "3c80b9ac-1086-4eee-ba0a-5181c825d96d",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2017-07-03",
@@ -4196,9 +5282,45 @@
             "status_kepegawaian_id_str": "Tenaga Honor Sekolah",
             "nip": null,
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Agrobisnis/Agribisnis",
+            "bidang_studi_terakhir": "Agribisnis",
             "pangkat_golongan_terakhir": "-",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "bcfcf36a-17b5-4c5c-ad20-40783d726f9a",
+                    "satuan_pendidikan_formal": "UNIVERSITAS TERBUKA (001031)",
+                    "fakultas": "AGRIBISNIS",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2018",
+                    "tahun_lulus": "2023",
+                    "nim": "041160408",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agribisnis",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "628b142f-ab0c-40c2-bdff-48db6c4c5eef",
+                    "satuan_pendidikan_formal": "UNIVERSITAS TERBUKA (001031)",
+                    "fakultas": "AGRIBISNIS",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2018",
+                    "tahun_lulus": "2023",
+                    "nim": "041160408",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": null,
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agribisnis",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "5d5a6568-061d-4ef0-ba48-5766ca320cad",
                     "satuan_pendidikan_formal": "Universitas Terbuka",
@@ -4214,7 +5336,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agrobisnis/Agribisnis",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pertanian"
+                    "gelar_akademik_id_str": "Sarjana Pertanian",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6891e5d8-653c-4fb4-b7cb-848c8103f0fd",
@@ -4231,7 +5354,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "102dd47c-839f-4dcb-a8ef-3f4593bbecc7",
@@ -4248,7 +5372,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "d924796d-62d3-4125-a78d-bf1c6d47eec7",
@@ -4265,14 +5390,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "fb9eec60-0aab-4411-b97a-c6e661a4a7c8",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "75721bb1-7e85-4d67-aced-abf38a16e151",
             "ptk_id": "1100cea5-1d52-43d8-b244-1c17f8399c36",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2015-06-28",
@@ -4310,7 +5438,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Guru Kelas SD/MI",
                     "jenjang_pendidikan_id_str": "D3",
-                    "gelar_akademik_id_str": ""
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9e84cb3f-88ba-49a2-b3d3-8df1c15e65bf",
@@ -4327,14 +5456,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "607bf40e-a96a-4db1-a4ab-c4a7b6a5bd60",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "cacf14f1-797a-4837-bb41-a9c19ce99601",
             "ptk_id": "89d20287-d8d3-447d-9ec3-119de4936fe2",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2016-08-01",
@@ -4358,6 +5490,24 @@
             "pangkat_golongan_terakhir": "-",
             "rwy_pend_formal": [
                 {
+                    "riwayat_pendidikan_formal_id": "e0251067-547b-4994-8094-becb5ea5cee8",
+                    "satuan_pendidikan_formal": "Universitas Winaya Mukti",
+                    "fakultas": "Kehutanan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2014",
+                    "tahun_lulus": "2021",
+                    "nim": "4122214110014",
+                    "status_kuliah": "0",
+                    "semester": "15",
+                    "ipk": "2.14",
+                    "prodi": "6d67a472-97e2-4f2e-a284-3f950fca81a1",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Kehutanan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
                     "riwayat_pendidikan_formal_id": "e54c57cd-cb94-4024-8ba2-e5b4f3c80d48",
                     "satuan_pendidikan_formal": "Universitas Winaya Mukti",
                     "fakultas": "",
@@ -4372,7 +5522,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Kehutanan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Kehutanan"
+                    "gelar_akademik_id_str": "Sarjana Kehutanan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "7e25818c-c6e3-4400-acb6-9f6edf798abf",
@@ -4389,7 +5540,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Kehutanan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "f76dc148-0853-41c8-bcce-42cd0fc35066",
@@ -4406,7 +5558,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "4d3a1d63-9b4a-42a4-9664-46ec771def92",
@@ -4423,14 +5576,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "5564845d-fb7c-4301-82bb-78519d9d6abd",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "aad1feea-8e42-4164-b271-44249367fcfe",
             "ptk_id": "9a569ed5-ed06-4799-adc7-8f29229141c9",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-04-01",
@@ -4468,7 +5624,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Mesin",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Teknik"
+                    "gelar_akademik_id_str": "Sarjana Teknik",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "f43e567b-45b7-410f-ba32-fb97192c2a1a",
+                    "satuan_pendidikan_formal": "Universitas Kebangsaan",
+                    "fakultas": "Teknik Mesin",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2017",
+                    "tahun_lulus": "2019",
+                    "nim": "20161120018",
+                    "status_kuliah": "0",
+                    "semester": "3",
+                    "ipk": "0.00",
+                    "prodi": "aa1f1231-525a-4319-9faa-3f2bfce04411",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Teknik Mekatronika",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "d8b87deb-635a-42f9-9612-a6425056e192",
@@ -4485,7 +5660,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "755bb5d2-3bc5-4700-9334-280690c5f5e2",
@@ -4502,7 +5678,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "d5aa9892-90cd-4ad6-9968-1049a2801d86",
@@ -4519,7 +5696,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -4530,13 +5708,16 @@
                     "tmt_pangkat": "2022-04-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "0dfb8bab-aadd-490d-b94b-61781e4eefc8",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "61c8b4a2-7742-4e3f-9edf-be6b0e372241",
             "ptk_id": "c658efd8-dbdc-4314-a2f9-7ed34e55d641",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-03-01",
@@ -4574,7 +5755,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sistem Informasi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Komputer"
+                    "gelar_akademik_id_str": "Sarjana Komputer",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "d2eae32e-61cd-4c0c-9bcd-9b52016e078a",
+                    "satuan_pendidikan_formal": "STMIK Bandung",
+                    "fakultas": "Sistem Informasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2013",
+                    "tahun_lulus": "2016",
+                    "nim": "3213031",
+                    "status_kuliah": "0",
+                    "semester": "7",
+                    "ipk": "3.38",
+                    "prodi": "dfdb48db-8a0b-45c0-b295-444bca520ac9",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "11d8152b-03da-409b-a5f2-d5086bc96412",
@@ -4591,7 +5791,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6c0f4471-289c-4db9-beb6-f91f1275f975",
@@ -4608,7 +5809,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ede2b2fd-1d7c-4f17-a1d5-32bc5cc6557e",
@@ -4625,7 +5827,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -4636,13 +5839,16 @@
                     "tmt_pangkat": "2022-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "1fb49c9a-567d-4712-a1ab-2d6eb0ef8a57",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "5eb30082-50e4-48d4-80fb-4ea571b1cfbc",
             "ptk_id": "03c07e96-a405-4cb4-b451-ed32c3879a3b",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2024-05-29",
@@ -4662,9 +5868,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "198104252024212005",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Sastra Inggris",
+            "bidang_studi_terakhir": "Bahasa dan Kebudayaan Inggris",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "88bf0821-99dc-464f-8c47-a7ee645f216b",
+                    "satuan_pendidikan_formal": "Universitas Airlangga",
+                    "fakultas": "Sastra Inggris",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2000",
+                    "tahun_lulus": "2005",
+                    "nim": "120010194",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "0.00",
+                    "prodi": "042a7866-94cc-4281-9e6c-213ba96c6660",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Bahasa dan Kebudayaan Inggris",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "1038b7c8-2437-4477-b46e-defc8905be61",
                     "satuan_pendidikan_formal": "Universitas Airlangga",
@@ -4680,7 +5904,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sastra Inggris",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Sastra"
+                    "gelar_akademik_id_str": "Sarjana Sastra",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "3cdce5a5-b90c-4f76-8af7-0bc8961df22b",
@@ -4697,7 +5922,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b0704d3e-3503-4731-9d9f-e0a7ddf339cd",
@@ -4714,7 +5940,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "088569f5-8bf6-4d4b-93c4-e425f0799cb6",
@@ -4731,7 +5958,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -4742,13 +5970,16 @@
                     "tmt_pangkat": "2024-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "519a2369-4d1d-45ee-8261-6f87a03bc2e8",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "3d21c227-19fd-4921-9084-b6ec489f6a20",
             "ptk_id": "44666908-4f80-4e73-a121-a28ced0176e0",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2021-02-26",
@@ -4786,7 +6017,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Bahasa dan Sastra Indonesia",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "7388caeb-9ad2-4812-b3bf-8a1b03798f35",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Bahasa Dan Sastra Indonesia",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2003",
+                    "tahun_lulus": "2006",
+                    "nim": "020103080",
+                    "status_kuliah": "0",
+                    "semester": "6",
+                    "ipk": "3.00",
+                    "prodi": "c0bff055-c36a-42b0-91f9-fa701c698001",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Keguruan dan Ilmu Pendidikan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ac40202b-af78-4dea-a299-e641012f9068",
@@ -4803,7 +6053,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "0b2d856c-2d6e-441e-9fec-f07034529747",
@@ -4820,7 +6071,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "3f74b15a-c26f-495d-8cb1-22ad5b75bcf0",
@@ -4837,14 +6089,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "13907511-b539-4eb1-9ff2-d7ae8031ceb9",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "551fb523-e4b5-46e0-81c4-5d092ed6167a",
             "ptk_id": "4f2fb035-8c1f-4885-a013-c64cf1ea1cd3",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2014-07-02",
@@ -4882,7 +6137,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Jasmani dan Kesehatan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "b98bddb4-80bf-4c32-b409-f1bdc9d302eb",
+                    "satuan_pendidikan_formal": "Universitas Pendidikan Indonesia",
+                    "fakultas": "Pendidikan Jasmani, Kesehatan Dan Rekreasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2009",
+                    "tahun_lulus": "2014",
+                    "nim": "0900910",
+                    "status_kuliah": "0",
+                    "semester": "10",
+                    "ipk": "2.85",
+                    "prodi": "f2b80343-a92b-4f64-a29c-b64c8974487a",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Jasmani",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "d6dce972-a718-41e5-aa02-47365d53c904",
@@ -4899,7 +6173,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "96b719a7-a88c-4e81-9a8c-1ef880512395",
@@ -4916,7 +6191,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "0b305e85-90f4-40b8-8089-a8d67fcf8927",
@@ -4933,14 +6209,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "962aea86-5130-421b-a5af-9c4830603021",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "40662685-43e0-4a67-9d85-fd6db5a913c4",
             "ptk_id": "0019fac4-3230-4cae-b060-9ed9906546f1",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2009-07-13",
@@ -4978,7 +6257,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ba4e529f-652c-4e81-8f1e-80530b5b8f52",
@@ -4995,7 +6275,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b4507d20-f906-48f5-8cc3-5ce522802cdc",
@@ -5012,14 +6293,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "2c6701df-4901-41e9-9ddf-875d1172d2dc",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "61ab835e-e720-4545-9972-41d90dec457b",
             "ptk_id": "0a53f2ab-397b-4b02-8767-8757dcbe6eb5",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2017-07-03",
@@ -5057,7 +6341,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pemerintahan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan"
+                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "81ef7d8e-6e60-4f71-9a0c-6d9deda27339",
+                    "satuan_pendidikan_formal": "Universitas Terbuka",
+                    "fakultas": "Ilmu Pemerintahan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2017",
+                    "tahun_lulus": "2022",
+                    "nim": "030455119",
+                    "status_kuliah": "0",
+                    "semester": "10",
+                    "ipk": "3.31",
+                    "prodi": "afd902b3-1106-4c64-bf94-547c46b77209",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Pemerintahan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "0d5c5dc9-2256-4b82-8d81-2e44f16dcd21",
@@ -5074,7 +6377,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "950be7c5-0918-439b-ba80-d5b938d22805",
@@ -5091,7 +6395,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "3ab08485-b4e5-429d-8968-df160724f4dd",
@@ -5108,14 +6413,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "7034ee07-0564-45c4-9ea1-690d3d40cd93",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "2460aed8-ecbb-4d03-b9e1-36bdda86f893",
             "ptk_id": "ba12ff3f-28b3-43d8-ae21-793600dcf900",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2016-01-01",
@@ -5135,9 +6443,27 @@
             "status_kepegawaian_id_str": "PPPK Paruh Waktu",
             "nip": "199308202025211124",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Agrobisnis/Agribisnis",
+            "bidang_studi_terakhir": "Agribinis",
             "pangkat_golongan_terakhir": "-",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "38f13ae1-b2b8-47ed-bfd7-05bd87ac2cba",
+                    "satuan_pendidikan_formal": "Universitas Winaya Mukti",
+                    "fakultas": "Agribisnis",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2015",
+                    "tahun_lulus": "2020",
+                    "nim": "4122115120077",
+                    "status_kuliah": "0",
+                    "semester": "12",
+                    "ipk": "1.18",
+                    "prodi": "92bc399b-dec5-4c97-8547-2c3fccfa15dc",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Agribinis",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "de64dfec-27bd-4a6a-acca-7c064a59dfc3",
                     "satuan_pendidikan_formal": "Universitas Winaya Mukti",
@@ -5153,7 +6479,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Agrobisnis/Agribisnis",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pertanian"
+                    "gelar_akademik_id_str": "Sarjana Pertanian",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "32b82374-e25e-4d47-9be0-95893afde5f3",
@@ -5170,7 +6497,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Kehutanan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8161b7c9-1297-4690-867f-1537951f7730",
@@ -5187,7 +6515,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b4884f7a-5d8c-4db0-829a-1081ba6d4fe6",
@@ -5204,14 +6533,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "864e9a4c-5fcc-47b1-a0f4-7d5747f85fd4",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "ee5dab67-839e-41cc-80fe-dc965776d562",
             "ptk_id": "0a77856a-ed61-4c41-b302-90a3d7c670fd",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2017-07-02",
@@ -5249,7 +6581,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Matematika",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "5277aa48-2fee-4165-8246-653516018152",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Matematika",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2006",
+                    "tahun_lulus": "2009",
+                    "nim": "01020306871",
+                    "status_kuliah": "0",
+                    "semester": "4",
+                    "ipk": "3.00",
+                    "prodi": "864a05c2-c94f-46bc-afe1-aac00c3d16fe",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Matematika",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "958aaba1-57cd-4600-a15e-b3d71b1a9bb5",
@@ -5266,7 +6617,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "e1a8b714-e158-4cfe-809a-23ecf05cc5df",
@@ -5283,7 +6635,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "15cd9f02-b891-4c32-84bf-27460de8c388",
@@ -5300,14 +6653,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Dasar",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "eed6f3df-1858-4924-a68c-1850c99cf909",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "d5d642b1-453e-4511-ad28-f0212cc51c05",
             "ptk_id": "a5bca992-0e1b-475e-ab85-9a85dcc58f09",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2009-07-13",
@@ -5345,7 +6701,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknologi Pangan",
                     "jenjang_pendidikan_id_str": "D1",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "de79874c-18fd-4c75-9924-cf63b3c468db",
@@ -5362,7 +6719,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Mesin",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "41ff50e8-84eb-4a17-902e-c9badacde4f6",
@@ -5379,7 +6737,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ac3a86ab-494a-45c9-81f7-12fb2e413139",
@@ -5396,14 +6755,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "eb863e69-bb4d-4e2c-8781-7a5c9bad0470",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "03a4bb94-aa94-46bc-910e-2a02a6ad9a50",
             "ptk_id": "bddd89a0-6aa0-4973-b823-2a28d1dfa1a1",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2004-07-25",
@@ -5441,7 +6803,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Agama Islam",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan Islam"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan Islam",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -5452,7 +6815,8 @@
                     "tmt_pangkat": "2022-04-01",
                     "masa_kerja_gol_tahun": "12",
                     "masa_kerja_gol_bulan": "8",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "c460ac2c-fb18-41e1-806a-9099b64245dd",
@@ -5461,13 +6825,16 @@
                     "tmt_pangkat": "2016-01-01",
                     "masa_kerja_gol_tahun": "6",
                     "masa_kerja_gol_bulan": "5",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "2a7f7b72-300d-45c6-adb7-a1c5433f68bd",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "a0b3e14d-1dc1-42b3-9cff-dda2392e68a1",
             "ptk_id": "26e5ddf2-f791-4a15-bc87-9940ee64f2d0",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2025-10-28",
@@ -5505,7 +6872,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ekonomi",
                     "jenjang_pendidikan_id_str": "S2",
-                    "gelar_akademik_id_str": "Magister Manajemen"
+                    "gelar_akademik_id_str": "Magister Manajemen",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "08ea5a4b-0537-4393-a645-507ef48353fd",
@@ -5522,7 +6890,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ekonomi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Ekonomi"
+                    "gelar_akademik_id_str": "Sarjana Ekonomi",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "8b40758b-a339-4647-a626-0555bbf60e75",
@@ -5539,7 +6908,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ekonomi",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b7b83f27-580d-483e-a8b4-41e1538aa73c",
@@ -5556,7 +6926,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ekonomi",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "898a27d0-50dd-4cc2-b911-887ca7ce0370",
@@ -5573,7 +6944,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ekonomi",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "-"
+                    "gelar_akademik_id_str": "-",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -5584,7 +6956,8 @@
                     "tmt_pangkat": "2019-04-01",
                     "masa_kerja_gol_tahun": "14",
                     "masa_kerja_gol_bulan": "10",
-                    "pangkat_golongan_id_str": "III/d"
+                    "pangkat_golongan_id_str": "III/d",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "b444014d-2588-44a9-9e0d-4b48f7706f58",
@@ -5593,13 +6966,16 @@
                     "tmt_pangkat": "2015-10-01",
                     "masa_kerja_gol_tahun": "12",
                     "masa_kerja_gol_bulan": "4",
-                    "pangkat_golongan_id_str": "III/c"
+                    "pangkat_golongan_id_str": "III/c",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "6446c3e6-c8db-4bf7-8440-040a360ba9ff",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "09437af5-b26e-4e3e-a981-ed934af8e6fc",
             "ptk_id": "d3ae415a-d01d-4da6-8665-392e7cac6ae0",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2022-04-01",
@@ -5637,7 +7013,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Bahasa dan Sastra Indonesia",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "31e39e9d-a134-4e9c-9145-b906eacbd7ab",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Bahasa Dan Sastra Indonesia",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2008",
+                    "tahun_lulus": "2011",
+                    "nim": "01020101080801",
+                    "status_kuliah": "0",
+                    "semester": "4",
+                    "ipk": "2.99",
+                    "prodi": "5ad9d585-146e-4602-aab8-bdb8f3e56c27",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Keguruan dan Ilmu Pendidikan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "03ca5a1a-f5b7-48e2-b2f0-f905c0d4a25b",
@@ -5654,7 +7049,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Sosial (IPS)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "50cb948e-9e72-47dc-a631-b324826cc95b",
@@ -5671,7 +7067,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9121dc5b-44d6-4233-8117-81114f17933b",
@@ -5688,14 +7085,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "1b2f34b6-33d2-472d-ac22-2395d703d3f6",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "d0978277-a028-4648-ba89-878e8e79d177",
             "ptk_id": "54bbb606-8a3d-4f2c-968a-4bd4dda3705c",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2024-05-29",
@@ -5715,9 +7115,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "199606222024212028",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Bahasa Indonesia",
+            "bidang_studi_terakhir": "Keguruan dan Ilmu Pendidikan",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "50a78c83-172d-44c7-af70-a6f50d8b18ed",
+                    "satuan_pendidikan_formal": "Universitas Suryakancana",
+                    "fakultas": "Pendidikan Bahasa Dan Sastra Indonesia",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2014",
+                    "tahun_lulus": "2018",
+                    "nim": "8820114031",
+                    "status_kuliah": "0",
+                    "semester": "8",
+                    "ipk": "3.12",
+                    "prodi": "c0bff055-c36a-42b0-91f9-fa701c698001",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Keguruan dan Ilmu Pendidikan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "d9f5bab0-f13a-42b9-9f4a-b1ae71dfb54b",
                     "satuan_pendidikan_formal": "UNIVERSITAS SURYAKANCANA",
@@ -5733,7 +7151,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Bahasa Indonesia",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "90fac1bd-0109-40f9-a291-bc37fd8a0ba9",
@@ -5750,7 +7169,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "b74547f8-b513-44d7-b44f-dd91f7489e53",
@@ -5767,7 +7187,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6886927f-b62b-411b-86a2-5ac7b0d016fd",
@@ -5784,7 +7205,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -5795,13 +7217,16 @@
                     "tmt_pangkat": "2024-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "b6f60806-aab2-40fd-8acc-fa5a14e74237",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "70c0de0e-0479-471a-ae26-63f2c39d275f",
             "ptk_id": "2e9e3528-b3a8-42be-9e4e-e2e2a0a6b1d3",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2016-07-02",
@@ -5839,7 +7264,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pemerintahan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan"
+                    "gelar_akademik_id_str": "Sarjana Ilmu Pemerintahan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "aeb3ee38-02fa-4ac0-8d02-d3a26c0862f7",
+                    "satuan_pendidikan_formal": "Universitas Terbuka",
+                    "fakultas": "Ilmu Pemerintahan",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2017",
+                    "tahun_lulus": "2022",
+                    "nim": "030117223",
+                    "status_kuliah": "0",
+                    "semester": "10",
+                    "ipk": "3.29",
+                    "prodi": "afd902b3-1106-4c64-bf94-547c46b77209",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Pemerintahan",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "214b73e1-40f4-47b0-86b6-b1fed3956b8b",
@@ -5856,7 +7300,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Bisnis dan Manajemen",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2a9b402d-4183-45ce-b50d-9476037d8a71",
@@ -5873,7 +7318,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "d25e0046-19e0-45df-a663-24cb3c0e1107",
@@ -5890,14 +7336,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "8a341535-4d1f-42ea-b1d6-e5c237f6e420",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "90daaa36-da12-4e0e-838d-ed7f13aa930b",
             "ptk_id": "f80d6106-1194-41e2-9c5f-ec090b1a09f6",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2019-07-13",
@@ -5935,7 +7384,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknologi Pangan",
                     "jenjang_pendidikan_id_str": "D1",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "ed31d837-2f29-4148-8bd7-173c81d392af",
@@ -5952,7 +7402,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Budidaya Kehutanan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9540692c-38f2-4f76-b20e-49a42a5d7246",
@@ -5969,7 +7420,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "cc953bd2-d397-4bd2-9bf6-b7121500cee2",
@@ -5986,14 +7438,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "97412e48-30c5-468b-a01b-71aa7050099a",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "b20ab9e2-f83a-402f-9890-8be2c2d9e4e3",
             "ptk_id": "0ed109ca-ec1d-417c-9494-c5c52450071c",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2020-07-13",
@@ -6013,9 +7468,27 @@
             "status_kepegawaian_id_str": "PPPK Paruh Waktu",
             "nip": "199311182025212129",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Sistem Informasi",
+            "bidang_studi_terakhir": "Ilmu Komputer",
             "pangkat_golongan_terakhir": "-",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "89f9b15f-53e8-4a80-9c95-07dcb4f0a259",
+                    "satuan_pendidikan_formal": "STMIK Bandung",
+                    "fakultas": "Sistem Informasi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2018",
+                    "tahun_lulus": "2021",
+                    "nim": "3218901",
+                    "status_kuliah": "0",
+                    "semester": "6",
+                    "ipk": "2.95",
+                    "prodi": "91c7f00f-3337-4340-a421-f88145bc7906",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "93cfcff1-12c3-4692-87b0-414afdcff441",
                     "satuan_pendidikan_formal": "STMIK Bandung",
@@ -6031,7 +7504,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Sistem Informasi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Komputer"
+                    "gelar_akademik_id_str": "Sarjana Komputer",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "dc8d5e84-a36e-4c4b-8f8c-8adcd0435168",
@@ -6048,7 +7522,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Komputer dan Jaringan",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "74bb568f-c401-46fa-a920-24f6255e6843",
@@ -6065,7 +7540,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "4ec309e1-100c-4876-a8cb-7283758ee9a1",
@@ -6082,14 +7558,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "afb06a3f-ef28-482c-8e30-e90a3619c82c",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "ddf77325-8599-4427-87f4-3e9c8c0ea7ae",
             "ptk_id": "5709bbc6-3a12-4557-851c-e7fb288347ff",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2021-01-01",
@@ -6127,7 +7606,26 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Informatika Komputer",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
+                },
+                {
+                    "riwayat_pendidikan_formal_id": "8416c22d-fbff-41fa-b31d-ae3593e89eee",
+                    "satuan_pendidikan_formal": "Universitas Putra Indonesia Yptk Padang",
+                    "fakultas": "Pendidikan Teknik Informatika",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2011",
+                    "tahun_lulus": "2015",
+                    "nim": "11101156110059",
+                    "status_kuliah": "0",
+                    "semester": "7",
+                    "ipk": "3.70",
+                    "prodi": "b0b3caf9-4579-4921-b44d-128b22a0443b",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Ilmu Komputer",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "32f7e639-1ee1-4b46-864a-f5fc7a33a95a",
@@ -6144,7 +7642,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "fd050ea5-e02e-4fc1-a799-b0e87bc91831",
@@ -6161,7 +7660,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "a15ae153-afa6-44ba-be98-34d522729d92",
@@ -6178,7 +7678,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -6189,7 +7690,8 @@
                     "tmt_pangkat": "2025-04-01",
                     "masa_kerja_gol_tahun": "8",
                     "masa_kerja_gol_bulan": "3",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "c24a4f00-0a20-48e4-a89b-0fa674951588",
@@ -6198,7 +7700,8 @@
                     "tmt_pangkat": "2020-12-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "8560ce7e-c6fd-4b0d-a2c2-5418df632f87",
@@ -6207,13 +7710,16 @@
                     "tmt_pangkat": "2021-12-01",
                     "masa_kerja_gol_tahun": "1",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "3cb53bbd-2b9d-4947-8f70-7ab9ef18efd6",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "1ac77e90-b4d4-44fa-9bd0-25f3ba5d9568",
             "ptk_id": "557127af-512c-4ffa-a9f2-958b6e793ca9",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2021-07-19",
@@ -6251,7 +7757,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Mesin Industri",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9eff2af4-e319-40c3-86ae-0430e156ba99",
@@ -6268,7 +7775,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "2e6f5d6f-deb6-4c56-beef-b6ca389935af",
@@ -6285,14 +7793,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "37362d70-ae14-4f9c-b5c0-6104d6358252",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "ba9a6f0e-0e1c-4b4f-abd4-2ab29066c860",
             "ptk_id": "42694477-f280-455e-9266-abcd38d4a01c",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2025-06-03",
@@ -6316,6 +7827,24 @@
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
                 {
+                    "riwayat_pendidikan_formal_id": "9751bc9d-7091-4b00-88cc-281793da486c",
+                    "satuan_pendidikan_formal": "Institut Pertanian Bogor",
+                    "fakultas": "Biologi",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2009",
+                    "tahun_lulus": "2014",
+                    "nim": "G34090058",
+                    "status_kuliah": "0",
+                    "semester": "10",
+                    "ipk": "2.98",
+                    "prodi": "e6a973dc-5b8f-44b3-9375-b8580d218c6c",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Biologi",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
+                {
                     "riwayat_pendidikan_formal_id": "a2c6b0b6-5abd-47b4-b6ea-96d639924e7e",
                     "satuan_pendidikan_formal": "Institut Pertanian Bogor",
                     "fakultas": "",
@@ -6330,7 +7859,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Biologi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Sains"
+                    "gelar_akademik_id_str": "Sarjana Sains",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6d532dce-80d5-466e-a5c1-e4adc21763da",
@@ -6347,7 +7877,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Biologi",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Sains"
+                    "gelar_akademik_id_str": "Sarjana Sains",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "c4e70bda-0db3-45d3-bc6d-91e231f8fe1c",
@@ -6364,7 +7895,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMA / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "13aeb4e2-5f38-441f-a8b2-851cbbfffc12",
@@ -6381,7 +7913,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "9b362c61-b04f-447b-a493-8e32889efdd0",
@@ -6398,7 +7931,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -6409,77 +7943,16 @@
                     "tmt_pangkat": "2025-03-01",
                     "masa_kerja_gol_tahun": "0",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "IX"
-                }
-            ]
-        },
-        {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "da839033-15cc-43d2-b84a-7bf82372047b",
-            "ptk_id": "fdad9a58-6e33-4ed6-97a8-c5e0a5482453",
-            "ptk_induk": "1",
-            "tanggal_surat_tugas": "2004-07-25",
-            "nama": "Yanti Pujawanti",
-            "jenis_kelamin": "P",
-            "tempat_lahir": "CIANJUR",
-            "tanggal_lahir": "1966-01-06",
-            "agama_id": 1,
-            "agama_id_str": "Islam",
-            "nuptk": "6438744647300012",
-            "nik": "3203144601660002",
-            "jenis_ptk_id": "92",
-            "jenis_ptk_id_str": "Guru",
-            "jabatan_ptk_id": "23204",
-            "jabatan_ptk_id_str": "Guru Kehutanan",
-            "status_kepegawaian_id": 1,
-            "status_kepegawaian_id_str": "PNS",
-            "nip": "196601062014062002",
-            "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Kehutanan",
-            "pangkat_golongan_terakhir": "III/b",
-            "rwy_pend_formal": [
-                {
-                    "riwayat_pendidikan_formal_id": "bbd516cb-1636-442e-ab97-e8ce819a8c82",
-                    "satuan_pendidikan_formal": "Universitas Mulawarman",
-                    "fakultas": "",
-                    "kependidikan": "1",
-                    "tahun_masuk": "1986",
-                    "tahun_lulus": "1991",
-                    "nim": "8604100003",
-                    "status_kuliah": "0",
-                    "semester": "0",
-                    "ipk": "0.00",
-                    "prodi": null,
-                    "id_reg_pd": null,
-                    "bidang_studi_id_str": "Kehutanan",
-                    "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Insinyur"
+                    "pangkat_golongan_id_str": "IX",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": [
-                {
-                    "riwayat_kepangkatan_id": "514347f3-3b04-47d9-b9c4-6b1de30b5c56",
-                    "nomor_sk": "Kep.571/KPG.06/Mutasi/2020",
-                    "tanggal_sk": "2020-10-01",
-                    "tmt_pangkat": "2020-10-01",
-                    "masa_kerja_gol_tahun": "16",
-                    "masa_kerja_gol_bulan": "3",
-                    "pangkat_golongan_id_str": "III/b"
-                },
-                {
-                    "riwayat_kepangkatan_id": "6ed9ccd0-f1a9-4603-85c8-717959b95cbf",
-                    "nomor_sk": "813/Kep.50/BKPPD/2014",
-                    "tanggal_sk": "2015-12-12",
-                    "tmt_pangkat": "2016-01-01",
-                    "masa_kerja_gol_tahun": "11",
-                    "masa_kerja_gol_bulan": "6",
-                    "pangkat_golongan_id_str": "III/a"
-                }
-            ]
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "ee66a85a-fb2a-48e3-894f-e7cf5032eac6",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "aae56c62-128d-425e-b070-fef9fbf1eb1b",
             "ptk_id": "348cfffa-9d49-45eb-92c6-08be9e1d6ef6",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2023-07-12",
@@ -6499,9 +7972,27 @@
             "status_kepegawaian_id_str": "PPPK",
             "nip": "198607052023211014",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Pendidikan Agama Islam",
+            "bidang_studi_terakhir": "Ilmu Pendidikan Agama Islam",
             "pangkat_golongan_terakhir": "IX",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "8d8b8090-7b03-4d46-a9ff-857ddadf17d0",
+                    "satuan_pendidikan_formal": "STAI YAMISA Soreang",
+                    "fakultas": "Pendidikan Agama Islam",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2012",
+                    "tahun_lulus": "2016",
+                    "nim": "12.AI.2.0220",
+                    "status_kuliah": "0",
+                    "semester": "3",
+                    "ipk": "0.00",
+                    "prodi": "8071258e-fb73-49f8-bf1c-fed7bb58970e",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Ilmu Pendidikan Agama Islam",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "4f2007cd-a845-4068-8000-b3431e354964",
                     "satuan_pendidikan_formal": "STAI YAMISA Soreang",
@@ -6517,7 +8008,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Agama Islam",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "3e7b361a-8ca0-4f61-bc3f-072965e81365",
@@ -6534,7 +8026,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Ilmu Pengetahuan Alam (IPA)",
                     "jenjang_pendidikan_id_str": "Paket C",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "1dcf10dd-d82f-4f0d-8f41-d5302110442c",
@@ -6551,7 +8044,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SMP / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_pendidikan_formal_id": "6579050e-c6d0-470e-8e2e-ce9c894da2e6",
@@ -6568,14 +8062,17 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Pendidikan Umum",
                     "jenjang_pendidikan_id_str": "SD / sederajat",
-                    "gelar_akademik_id_str": "Non Gelar"
+                    "gelar_akademik_id_str": "Non Gelar",
+                    "is_sync_to_server": true
                 }
             ],
-            "rwy_kepangkatan": []
+            "rwy_kepangkatan": [],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         },
         {
-            "tahun_ajaran_id": "2025",
-            "ptk_terdaftar_id": "317a22df-e60f-44b0-9be2-b80e70b9ff3c",
+            "tahun_ajaran_id": "2026",
+            "ptk_terdaftar_id": "c794f007-9501-4183-b432-4bf8f1290027",
             "ptk_id": "35cd7c7c-3712-4323-bf23-b0e5f705e17d",
             "ptk_induk": "1",
             "tanggal_surat_tugas": "2021-01-01",
@@ -6595,9 +8092,27 @@
             "status_kepegawaian_id_str": "PNS",
             "nip": "199012232020121012",
             "pendidikan_terakhir": "S1",
-            "bidang_studi_terakhir": "Teknik Pemesinan",
+            "bidang_studi_terakhir": "Pendidikan Teknik Mesin",
             "pangkat_golongan_terakhir": "III/b",
             "rwy_pend_formal": [
+                {
+                    "riwayat_pendidikan_formal_id": "405b3f6d-e913-4329-9c36-960e803b6ef8",
+                    "satuan_pendidikan_formal": "Universitas Pendidikan Indonesia",
+                    "fakultas": "Pendidikan Teknik Mesin",
+                    "kependidikan": "0",
+                    "tahun_masuk": "2009",
+                    "tahun_lulus": "2016",
+                    "nim": "0906900",
+                    "status_kuliah": "0",
+                    "semester": "14",
+                    "ipk": "3.33",
+                    "prodi": "d216b534-7acb-4b04-bf30-e7ef536d8ebf",
+                    "id_reg_pd": null,
+                    "bidang_studi_id_str": "Pendidikan Teknik Mesin",
+                    "jenjang_pendidikan_id_str": "S1",
+                    "gelar_akademik_id_str": "",
+                    "is_sync_to_server": true
+                },
                 {
                     "riwayat_pendidikan_formal_id": "59e4cbc6-14cd-4f97-99c1-daff72152030",
                     "satuan_pendidikan_formal": "Universitas Pendidikan Indonesia",
@@ -6613,7 +8128,8 @@
                     "id_reg_pd": null,
                     "bidang_studi_id_str": "Teknik Pemesinan",
                     "jenjang_pendidikan_id_str": "S1",
-                    "gelar_akademik_id_str": "Sarjana Pendidikan"
+                    "gelar_akademik_id_str": "Sarjana Pendidikan",
+                    "is_sync_to_server": true
                 }
             ],
             "rwy_kepangkatan": [
@@ -6624,7 +8140,8 @@
                     "tmt_pangkat": "2025-04-01",
                     "masa_kerja_gol_tahun": "4",
                     "masa_kerja_gol_bulan": "4",
-                    "pangkat_golongan_id_str": "III/b"
+                    "pangkat_golongan_id_str": "III/b",
+                    "is_sync_to_server": true
                 },
                 {
                     "riwayat_kepangkatan_id": "a9fafffe-7d92-49ca-b2e1-35c44b533b28",
@@ -6633,9 +8150,12 @@
                     "tmt_pangkat": "2021-12-01",
                     "masa_kerja_gol_tahun": "1",
                     "masa_kerja_gol_bulan": "0",
-                    "pangkat_golongan_id_str": "III/a"
+                    "pangkat_golongan_id_str": "III/a",
+                    "is_sync_to_server": true
                 }
-            ]
+            ],
+            "is_sync_to_server_ptk_terdaftar": true,
+            "is_sync_to_server_ptk": true
         }
     ]
 }

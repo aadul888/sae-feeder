@@ -1,7 +1,7 @@
-﻿<?php
+<?php
 
 /**
- * LOADER SAE - Data Puller dari API Dapodik ke SAE
+ * SAE FEEDER - Data Feeder dari API Dapodik ke SAE
  * 
  * Aplikasi ini berfungsi untuk menarik data dari API Dapodik (localhost:5774)
  * dan mengirimkannya ke aplikasi SAE melalui API endpoint
@@ -281,7 +281,7 @@ try {
     function dapodik_json_decode($raw, $assoc = true)
     {
            $clean = trim((string) $raw);
-           // Strip UTF-8 BOM (\xEF\xBB\xBF) — SAE hosting sometimes emits double BOM
+           // Strip UTF-8 BOM (\xEF\xBB\xBF) � SAE hosting sometimes emits double BOM
            $clean = preg_replace('/^(\xEF\xBB\xBF)+/', '', $clean);
            $data = json_decode(fix_dapodik_json($clean), $assoc);
         if (json_last_error() === JSON_ERROR_NONE) return $data;
@@ -299,7 +299,7 @@ try {
             $s = trim((string) $raw);
             // Replace single-quoted strings with double-quoted (Dapodik uses single quotes)
             $s = preg_replace('/\'/', '"', $s);
-            // Unquoted keys → quoted keys (e.g. { success: true } → { "success": true })
+            // Unquoted keys ? quoted keys (e.g. { success: true } ? { "success": true })
             $s = preg_replace('/([{,]\s*)([a-zA-Z_][a-zA-Z0-9_]*)\s*:/', '$1"$2":', $s);
             // Remove trailing commas before } or ]
             $s = preg_replace('/,\s*([}\]])/', '$1', $s);
@@ -564,7 +564,7 @@ try {
         } elseif ($http_code === 404) {
             return ['status' => false, 'message' => 'API endpoint belum tersedia.', 'action_required' => 'check_api_file'];
         } elseif ($http_code === 401) {
-            // Don't wipe api_key — could be transient. Let user retry or update manually.
+            // Don't wipe api_key � could be transient. Let user retry or update manually.
             if (function_exists('log_message')) log_message('WARNING', 'SAE returned 401 on status check - api_key may be invalid');
             return ['status' => false, 'message' => 'API Key tidak valid atau SAE belum menerima key. Silakan verifikasi API Key di konfigurasi SAE.', 'action_required' => 'update_api_key'];
         }
@@ -610,11 +610,16 @@ try {
         curl_setopt_array($curl, [
             CURLOPT_URL => $sae_api_url,
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT => $config->get('sae.timeout', 30),
-            CURLOPT_CONNECTTIMEOUT => 10,
+            CURLOPT_TIMEOUT => $config->get('sae.timeout', 120),
+            CURLOPT_CONNECTTIMEOUT => 15,
             CURLOPT_POST => true,
             CURLOPT_POSTFIELDS => json_encode($payload),
-            CURLOPT_HTTPHEADER => ['Content-Type: application/json', 'Authorization: Bearer ' . $config->get('sae.api_key'), 'User-Agent: Loader-SAE/1.0'],
+            CURLOPT_HTTPHEADER => [
+                'Content-Type: application/json',
+                'Authorization: Bearer ' . $config->get('sae.api_key'),
+                'User-Agent: Loader-SAE/1.0',
+                'Expect:'
+            ],
             CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_SSL_VERIFYHOST => false,
         ]);
@@ -628,9 +633,11 @@ try {
         if ($http_code !== 200) {
             if ($http_code === 401) {
                 if (function_exists('log_message')) log_message('WARNING', 'SAE API returned 401 Unauthorized - api_key may be invalid');
-                throw new Exception('HTTP Error saat push ke SAE: 401 - API Key tidak valid. Silakan verifikasi API Key di konfigurasi SAE.');
+                throw new Exception('HTTP Error 401 - API Key tidak valid. Silakan verifikasi API Key di konfigurasi SAE.');
             }
-            throw new Exception('HTTP Error saat push ke SAE: ' . $http_code . ' - Response: ' . substr(is_string($response) ? $response : '', 0, 200));
+            $body = dapodik_json_decode(is_string($response) ? $response : '', true);
+            $msg = (is_array($body) && !empty($body['message'])) ? $body['message'] : substr(is_string($response) ? $response : '', 0, 500);
+            throw new Exception('HTTP Error ' . $http_code . ': ' . $msg);
         }
 
         $clean = trim(is_string($response) ? $response : '');
@@ -765,6 +772,30 @@ try {
         $ep_index = 0;
         $errors_list = [];
 
+        // Snapshot data yang sudah diambil, dipakai UI untuk menampilkan progres per jenis data
+        $data_breakdown = function () use (&$all_data, &$fetch_errors, $dapodik_endpoints) {
+            $out = [];
+            foreach ($dapodik_endpoints as $key => $cfg) {
+                if (!array_key_exists($key, $all_data)) {
+                    if (isset($fetch_errors[$key])) {
+                        $out[] = [
+                            'endpoint' => $key,
+                            'label' => $cfg['description'],
+                            'count' => 0,
+                            'error' => true
+                        ];
+                    }
+                    continue;
+                }
+                $out[] = [
+                    'endpoint' => $key,
+                    'label' => $cfg['description'],
+                    'count' => count($all_data[$key])
+                ];
+            }
+            return $out;
+        };
+
         clear_sync_progress();
 
         // Fetch all endpoints from Dapodik sequentially with progress
@@ -779,7 +810,8 @@ try {
                 'rows_done' => 0,
                 'rows_total' => 0,
                 'message' => 'Mengambil ' . $ep_config['description'] . '...',
-                'errors' => $errors_list
+                'errors' => $errors_list,
+                'data_breakdown' => $data_breakdown()
             ]);
 
             try {
@@ -797,7 +829,8 @@ try {
                     'rows_done' => count($data),
                     'rows_total' => count($data),
                     'message' => 'Berhasil: ' . $ep_config['description'] . ' (' . count($data) . ' data)',
-                    'errors' => $errors_list
+                    'errors' => $errors_list,
+                    'data_breakdown' => $data_breakdown()
                 ]);
 
                 log_message('INFO', "Berhasil ambil " . count($data) . " records dari $endpoint");
@@ -807,7 +840,7 @@ try {
                 log_message('ERROR', "Gagal ambil $endpoint: " . $e->getMessage());
 
                 write_sync_progress([
-                    'stage' => 'error',
+                    'stage' => 'fetched',
                     'current_endpoint' => $endpoint,
                     'total_endpoints' => $total_endpoints,
                     'ep_index' => $ep_index,
@@ -815,12 +848,25 @@ try {
                     'rows_done' => 0,
                     'rows_total' => 0,
                     'message' => ' ' . $ep_config['description'] . ' gagal: ' . $e->getMessage(),
-                    'errors' => $errors_list
+                    'errors' => $errors_list,
+                    'data_breakdown' => $data_breakdown()
                 ]);
             }
         }
 
         if (empty($all_data)) {
+            write_sync_progress([
+                'stage' => 'error',
+                'current_endpoint' => 'all',
+                'total_endpoints' => $total_endpoints,
+                'ep_index' => $ep_index,
+                'endpoint_label' => 'Gagal',
+                'rows_done' => 0,
+                'rows_total' => 0,
+                'message' => 'Semua endpoint gagal diambil dari Dapodik',
+                'errors' => $errors_list,
+                'data_breakdown' => []
+            ]);
             return [
                 'success' => false,
                 'message' => 'Semua endpoint gagal diambil dari Dapodik',
@@ -840,22 +886,27 @@ try {
                 'rows_done' => 0,
                 'rows_total' => $total_records,
                 'message' => "Mengirim $total_records data ke SAE...",
-                'errors' => $errors_list
+                'errors' => $errors_list,
+                'data_breakdown' => $data_breakdown()
             ]);
 
             try {
                 $sae_result = push_all_to_sae($all_data);
 
+                $final_success = empty($fetch_errors) && (($sae_result['success'] ?? true) !== false);
                 write_sync_progress([
-                    'stage' => 'done',
+                    'stage' => $final_success ? 'done' : 'error',
                     'current_endpoint' => 'all',
                     'total_endpoints' => $total_endpoints,
                     'ep_index' => $total_endpoints,
-                    'endpoint_label' => 'Selesai',
-                    'rows_done' => $total_records,
+                    'endpoint_label' => $final_success ? 'Selesai' : 'Selesai dengan kesalahan',
+                    'rows_done' => $final_success ? $total_records : 0,
                     'rows_total' => $total_records,
-                    'message' => "Berhasil: $total_records data terkirim ke SAE",
-                    'errors' => $errors_list
+                    'message' => $final_success
+                        ? "Berhasil: $total_records data terkirim ke SAE"
+                        : "Selesai, tetapi ada data yang gagal: " . implode('; ', $errors_list),
+                    'errors' => $errors_list,
+                    'data_breakdown' => $data_breakdown()
                 ]);
             } catch (Exception $e) {
                 log_message('ERROR', "Gagal kirim data ke SAE: " . $e->getMessage());
@@ -869,7 +920,8 @@ try {
                     'rows_done' => 0,
                     'rows_total' => $total_records,
                     'message' => ' Gagal kirim ke SAE: ' . $e->getMessage(),
-                    'errors' => $errors_list
+                    'errors' => $errors_list,
+                    'data_breakdown' => $data_breakdown()
                 ]);
                 return [
                     'success' => false,
@@ -884,10 +936,9 @@ try {
         }
 
         $fetched  = count($all_data);
-        $failed_fetch = count($fetch_errors);
 
         return [
-            'success' => ($sae_result['success'] ?? false) && $failed_fetch === 0,
+            'success' => empty($fetch_errors) && (($sae_result['success'] ?? true) !== false),
             'message' => "Kirim data selesai: $fetched/$total_endpoints endpoint berhasil diambil, $total_records records dikirim dalam 1 request",
             'details' => !empty($fetch_errors)
                 ? 'Endpoint gagal diambil: ' . implode(', ', array_keys($fetch_errors))
@@ -948,14 +999,15 @@ try {
         curl_setopt_array($curl, [
             CURLOPT_URL            => $sae_api_url,
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT        => 120,
-            CURLOPT_CONNECTTIMEOUT => 10,
+            CURLOPT_TIMEOUT        => 300,
+            CURLOPT_CONNECTTIMEOUT => 15,
             CURLOPT_POST           => true,
             CURLOPT_POSTFIELDS     => json_encode($payload),
             CURLOPT_HTTPHEADER     => [
                 'Content-Type: application/json',
                 'Authorization: Bearer ' . $config->get('sae.api_key'),
-                'User-Agent: Loader-SAE/1.0'
+                'User-Agent: Loader-SAE/1.0',
+                'Expect:'
             ],
             CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_SSL_VERIFYHOST => false,
@@ -965,13 +1017,19 @@ try {
         $http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
         $error     = curl_error($curl);
         curl_close($curl);
+
+        if ($error) {
+            throw new Exception('cURL Error saat push ke SAE: ' . $error);
+        }
             if ($http_code === 401) {
                 if (function_exists('log_message')) log_message('WARNING', 'SAE API returned 401 - api_key may be invalid');
                 throw new Exception('HTTP 401 - API Key tidak valid. Silakan verifikasi API Key di konfigurasi SAE.');
             }
 
         if ($http_code !== 200) {
-            throw new Exception('HTTP Error ' . $http_code . ': ' . substr(is_string($response) ? $response : '', 0, 200));
+            $body = dapodik_json_decode(is_string($response) ? $response : '', true);
+            $msg = (is_array($body) && !empty($body['message'])) ? $body['message'] : substr(is_string($response) ? $response : '', 0, 500);
+            throw new Exception('HTTP Error ' . $http_code . ': ' . $msg);
         }
 
         $clean = trim(is_string($response) ? $response : '');
@@ -1084,6 +1142,7 @@ try {
 if (isset($_REQUEST['action'])) {
     header('Content-Type: application/json');
     $action = $_REQUEST['action'];
+    $sync_progress_started = false;
     try {
         $config = new ConfigManager();
         switch ($action) {
@@ -1111,8 +1170,10 @@ if (isset($_REQUEST['action'])) {
                     'rows_done' => 0,
                     'rows_total' => 0,
                     'message' => 'Memulai proses kirim data...',
-                    'errors' => []
+                    'errors' => [],
+                    'data_breakdown' => []
                 ]);
+                $sync_progress_started = true;
                 
                 // Safety check 1: Rate limiting
                 LoaderSafety::checkRateLimit($max_per_second = 2);
@@ -1138,6 +1199,7 @@ if (isset($_REQUEST['action'])) {
                     } else {
                         $result = sync_endpoint($endpoint, $dry_run);
                     }
+                    // Jangan hapus progress: biarkan status akhir (done/error) terbaca UI.
                     echo json_encode($result);
                 } catch (Exception $e) {
                     LoaderSafety::recordError();
@@ -1163,7 +1225,7 @@ if (isset($_REQUEST['action'])) {
             case 'test_dapodik':
                 $token = $_POST['token'] ?? '';
                 $npsn = $_POST['npsn'] ?? '';
-                if (empty($token)) throw new Exception('Token tidak boleh kosong');
+                if (empty($token) || $token === '***') throw new Exception('Token tidak boleh kosong');
                 if (empty($npsn)) throw new Exception('NPSN tidak boleh kosong');
                 $config->update_dapodik_token($token);
                 $config->set('dapodik.npsn', $npsn);
@@ -1173,7 +1235,7 @@ if (isset($_REQUEST['action'])) {
             case 'test_sae':
                 $api_key = $_POST['api_key'] ?? '';
                 $base_url = $_POST['base_url'] ?? '';
-                if (empty($api_key)) throw new Exception('API Key tidak boleh kosong');
+                if (empty($api_key) || $api_key === '***') throw new Exception('API Key tidak boleh kosong');
                 $config->update_sae_api_key($api_key);
                 if (!empty($base_url)) $config->update_sae_url($base_url);
                 $result = check_sae_connection($api_key, $base_url);
@@ -1183,6 +1245,23 @@ if (isset($_REQUEST['action'])) {
                 throw new Exception('Action tidak dikenal');
         }
     } catch (Exception $e) {
+        if ($action === 'sync' && $sync_progress_started) {
+            $prev = get_sync_progress();
+            $prev_errors = is_array($prev['errors'] ?? null) ? $prev['errors'] : [];
+            $prev_errors[] = $e->getMessage();
+            write_sync_progress([
+                'stage' => 'error',
+                'current_endpoint' => $prev['current_endpoint'] ?? 'all',
+                'total_endpoints' => $prev['total_endpoints'] ?? 5,
+                'ep_index' => $prev['ep_index'] ?? 0,
+                'endpoint_label' => 'Gagal',
+                'rows_done' => 0,
+                'rows_total' => $prev['rows_total'] ?? 0,
+                'message' => 'Gagal: ' . $e->getMessage(),
+                'errors' => $prev_errors,
+                'data_breakdown' => $prev['data_breakdown'] ?? []
+            ]);
+        }
         echo json_encode(['success' => false, 'message' => $e->getMessage()]);
     }
     exit;

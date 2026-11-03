@@ -1,8 +1,16 @@
+# Runtime config (berisi token Dapodik & API key SAE asli)
+dynamic_config.json
+
 # Logs & Cache
 logs/*.log
 cache/*
 sync_progress.json
 
 # Installer build artifacts
+build/
 dist/payload/
 dist/iexpress/
+dist/SAE-Feeder-Setup.zip
+
+# Kompilasi sementara builder (dibuat ulang oleh build-installer.ps1)
+installer_builder/*.exe

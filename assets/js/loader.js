@@ -27,6 +27,163 @@ function clearLog() {
     '<div class="text-muted">Log dibersihkan...</div>';
 }
 
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+  });
+}
+
+// Alert hasil sinkronisasi: tidak hilang sendiri, hanya ditutup manual.
+function showSyncAlert(type, message, details, link) {
+  const box = document.getElementById("sync-alert");
+  if (!box) return;
+  const cls = type === "success" ? "alert-success" : type === "error" ? "alert-danger" : "alert-info";
+  const icon = type === "success" ? "check-circle" : type === "error" ? "times-circle" : "info-circle";
+  let linkHtml = "";
+  if (link && typeof link.url === "string" && /^https:\/\//i.test(link.url)) {
+    linkHtml =
+      '<a href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener" ' +
+      'style="display:inline-block;margin-top:.4rem;font-weight:700;color:inherit;text-decoration:underline;">' +
+      escapeHtml(link.label || "Unduh") + "</a>";
+  }
+  let html =
+    '<div class="alert ' + cls + '" style="display:flex; gap:.55rem; align-items:flex-start;">' +
+    '<i class="fas fa-' + icon + '" style="margin-top:.2rem;"></i>' +
+    '<div style="flex:1; min-width:0;">' +
+    '<div style="font-weight:700;">' + escapeHtml(message) + "</div>" +
+    (details ? '<div style="font-size:.76rem; opacity:.85; margin-top:.25rem;">' + escapeHtml(details) + "</div>" : "") +
+    linkHtml +
+    "</div>" +
+    '<button type="button" aria-label="Tutup" onclick="document.getElementById(\'sync-alert\').style.display=\'none\'" ' +
+    'style="background:none;border:none;color:inherit;cursor:pointer;font-size:1rem;line-height:1;padding:0;">&times;</button>' +
+    "</div>";
+  box.innerHTML = html;
+  box.style.display = "block";
+}
+
+function parseVersion(value) {
+  return String(value || "")
+    .trim()
+    .replace(/^v/i, "")
+    .split(".")
+    .map(function (n) {
+      return parseInt(n, 10) || 0;
+    });
+}
+
+function isNewerVersion(candidate, current) {
+  const a = parseVersion(candidate);
+  const b = parseVersion(current);
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    const x = a[i] || 0;
+    const y = b[i] || 0;
+    if (x > y) return true;
+    if (x < y) return false;
+  }
+  return false;
+}
+
+// Cek update dari repo GitHub: bandingkan VERSION, tautkan installer terbaru.
+function checkForUpdate() {
+  const cfg = window.SAE_APP || {};
+  const repo = cfg.repo || "aadul888/sae-feeder";
+  const current = cfg.version || "0.0.0";
+  const btn = document.getElementById("btn-check-update");
+  if (btn) btn.disabled = true;
+
+  showSyncAlert("info", "Memeriksa update...", "Versi terpasang: v" + current);
+
+  fetch("https://raw.githubusercontent.com/" + repo + "/main/VERSION", { cache: "no-store" })
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.text();
+    })
+    .then(function (txt) {
+      const latest = String(txt || "").trim();
+      if (!/^v?\d+\.\d+/.test(latest)) throw new Error("Format VERSION tidak valid");
+
+      if (!isNewerVersion(latest, current)) {
+        showSyncAlert("success", "SAE Feeder sudah versi terbaru (v" + current + ").");
+        return null;
+      }
+
+      // Cari asset installer di GitHub Release terbaru, fallback ke installer mentah di repo.
+      return fetch("https://api.github.com/repos/" + repo + "/releases/latest", {
+        headers: { Accept: "application/vnd.github+json" },
+        cache: "no-store",
+      })
+        .then(function (r) {
+          return r.ok ? r.json() : null;
+        })
+        .catch(function () {
+          return null;
+        })
+        .then(function (rel) {
+          let url = "https://github.com/" + repo + "/raw/main/dist/SAE-Feeder-Setup.exe";
+          if (rel && Array.isArray(rel.assets)) {
+            const asset =
+              rel.assets.find(function (a) {
+                return a.name === "SAE-Feeder-Setup.exe";
+              }) ||
+              rel.assets.find(function (a) {
+                return /setup.*\.exe$/i.test(a.name);
+              });
+            if (asset && asset.browser_download_url) url = asset.browser_download_url;
+            else if (rel.html_url) url = rel.html_url;
+          }
+          showSyncAlert(
+            "info",
+            "Update tersedia: v" + latest + " (terpasang v" + current + ").",
+            "Unduh installer, tutup SAE Feeder dari ikon tray, lalu jalankan. Token Dapodik dan API key SAE tetap tersimpan.",
+            { url: url, label: "Unduh SAE-Feeder-Setup.exe v" + latest },
+          );
+          return null;
+        });
+    })
+    .catch(function (err) {
+      showSyncAlert("error", "Gagal memeriksa update.", String((err && err.message) || err));
+    })
+    .then(function () {
+      if (btn) btn.disabled = false;
+    });
+}
+
+function stopProgressPoll() {
+  if (progressPoll) {
+    clearInterval(progressPoll);
+    progressPoll = null;
+  }
+}
+
+function renderBreakdown(progress) {
+  const box = document.getElementById("progress-breakdown");
+  if (!box) return;
+  const list = Array.isArray(progress.data_breakdown) ? progress.data_breakdown : [];
+  if (!list.length) {
+    box.innerHTML = "";
+    return;
+  }
+  const active = progress.stage === "fetching" || progress.stage === "fetched";
+  box.innerHTML = list
+    .map(function (item) {
+      const failed = item.error === true;
+      const current = !failed && active && item.endpoint === progress.current_endpoint;
+      const icon = failed
+        ? '<i class="fas fa-times-circle"></i>'
+        : current
+          ? '<i class="fas fa-spinner fa-spin"></i>'
+          : '<i class="fas fa-check-circle"></i>';
+      const state = failed ? "error" : current ? "current" : "done";
+      return (
+        '<div class="progress-item ' + state + '">' +
+        "<span>" + icon + " " + escapeHtml(item.label || item.endpoint) + "</span>" +
+        "<span>" + (failed ? "gagal" : Number(item.count || 0) + " data") + "</span>" +
+        "</div>"
+      );
+    })
+    .join("");
+}
+
 // Poll progress from server
 function pollProgress() {
   if (!syncInProgress) return;
@@ -50,41 +207,56 @@ function pollProgress() {
         syncHasStarted = true;
       }
 
-      const progressContainer = document.querySelector(".progress-container");
+      const progressContainer = document.getElementById("progress-shell");
       const progressBar = document.querySelector(".progress-bar");
       const progressText = document.getElementById("progress-text");
       const detailText = document.getElementById("progress-detail");
 
-      progressContainer.style.display = "block";
+      if (progressContainer) progressContainer.style.display = "block";
 
       // Calculate percentage
       let pct = 0;
       if (p.stage === "fetching" || p.stage === "fetched") {
         // During fetch: ep_index / total_endpoints * 80%
         pct = Math.round((p.ep_index / p.total_endpoints) * 80);
-        if (p.stage === "fetched")
-          pct = Math.round((p.ep_index / p.total_endpoints) * 80);
       } else if (p.stage === "pushing") {
-        pct = 85;
+        pct = 90;
       } else if (p.stage === "done") {
         pct = 100;
       } else if (p.stage === "error") {
         pct = 100;
-        progressBar.classList.add("bg-danger");
       }
 
+      progressBar.classList.remove("bg-danger");
+      progressBar.style.background =
+        p.stage === "error"
+          ? "linear-gradient(90deg, #ef4444 0%, #dc2626 100%)"
+          : p.stage === "done"
+            ? "linear-gradient(90deg, #10b981 0%, #059669 100%)"
+            : "";
       progressBar.style.width = pct + "%";
       progressText.textContent = p.message;
       if (detailText) {
-        if (p.stage === "fetching" || p.stage === "fetched") {
+        if (p.stage === "fetching") {
           detailText.textContent =
-            "Endpoint " +
-            p.ep_index +
-            " dari " +
-            p.total_endpoints +
+            "Mengambil " +
+            (p.endpoint_label || p.current_endpoint || "") +
             " (" +
+            p.ep_index +
+            "/" +
+            p.total_endpoints +
+            ")";
+        } else if (p.stage === "fetched") {
+          detailText.textContent =
+            "Didapat " +
             p.rows_done +
-            " data)";
+            " data dari " +
+            (p.endpoint_label || p.current_endpoint || "") +
+            " (" +
+            p.ep_index +
+            "/" +
+            p.total_endpoints +
+            ")";
         } else if (p.stage === "pushing") {
           detailText.textContent =
             "Mengirim " + p.rows_total + " data ke SAE...";
@@ -94,35 +266,34 @@ function pollProgress() {
           detailText.textContent = "Terjadi kesalahan";
         }
       }
+      renderBreakdown(p);
 
       if (p.stage === "done" || p.stage === "error") {
-        setTimeout(() => {
-          clearSyncInProgress();
-        }, 2000);
+        stopProgressPoll();
       }
     })
     .catch(() => {});
 }
 
-function clearSyncInProgress() {
+// Selesaikan proses tanpa reload halaman: alert tetap tampil sampai ditutup manual.
+function finishSync(success, message, details) {
   syncInProgress = false;
   syncHasStarted = false;
-  if (progressPoll) {
-    clearInterval(progressPoll);
-    progressPoll = null;
-  }
+  stopProgressPoll();
+
   const btnSync = document.getElementById("btn-sync");
-  btnSync.disabled = false;
-  btnSync.innerHTML = '<i class="fas fa-sync-alt me-2"></i>Kirim Semua Data';
-  setTimeout(() => {
-    const pc = document.querySelector(".progress-container");
-    if (pc) pc.style.display = "none";
-    const pb = document.querySelector(".progress-bar");
-    if (pb) {
-      pb.style.width = "0%";
-      pb.classList.remove("bg-danger");
-    }
-  }, 3000);
+  if (btnSync) {
+    btnSync.disabled = false;
+    btnSync.className = success
+      ? "btn btn-success btn-sync-main"
+      : "btn btn-outline-danger btn-sync-main";
+    btnSync.innerHTML = success
+      ? '<i class="fas fa-check-circle"></i>Selesai — Kirim Ulang'
+      : '<i class="fas fa-redo"></i>Coba Lagi';
+    btnSync.onclick = startSync;
+  }
+
+  showSyncAlert(success ? "success" : "error", message, details);
 }
 
 // Fungsi untuk memulai kirim data
@@ -134,32 +305,34 @@ function startSync() {
 
   const endpoint = "all";
   const btnSync = document.getElementById("btn-sync");
-  const progressContainer = document.querySelector(".progress-container");
+  const progressContainer = document.getElementById("progress-shell");
   const progressBar = document.querySelector(".progress-bar");
   const progressText = document.getElementById("progress-text");
-
-  // Ensure progress-detail span exists
-  let detailSpan = document.getElementById("progress-detail");
-  if (!detailSpan) {
-    detailSpan = document.createElement("div");
-    detailSpan.id = "progress-detail";
-    detailSpan.className = "small text-muted mt-1";
-    document.querySelector(".progress-shell .mt-2").appendChild(detailSpan);
-  }
 
   syncInProgress = true;
   syncHasStarted = false;
   btnSync.disabled = true;
-  btnSync.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Mengirim...';
-  progressContainer.style.display = "block";
+  btnSync.className = "btn btn-primary btn-sync-main";
+  btnSync.innerHTML = '<i class="fas fa-spinner fa-spin"></i>Mengirim Data...';
+  const alertBox = document.getElementById("sync-alert");
+  if (alertBox) {
+    alertBox.style.display = "none";
+    alertBox.innerHTML = "";
+  }
+  const breakdownBox = document.getElementById("progress-breakdown");
+  if (breakdownBox) breakdownBox.innerHTML = "";
+  const detailBox = document.getElementById("progress-detail");
+  if (detailBox) detailBox.textContent = "";
+  if (progressContainer) progressContainer.style.display = "block";
   progressBar.style.width = "0%";
-  progressBar.classList.remove("bg-danger");
+  progressBar.className = "progress-bar";
+  progressBar.style.background = "";
   progressText.textContent = "Memulai proses Kirim Data...";
 
   addLog(`Memulai kirim data endpoint: ${endpoint}`, "info");
 
   // Start polling progress
-  if (progressPoll) clearInterval(progressPoll);
+  stopProgressPoll();
   pollProgress();
   progressPoll = setInterval(pollProgress, 1500);
 
@@ -174,27 +347,34 @@ function startSync() {
     .then((response) => response.json())
     .then((data) => {
       progressBar.style.width = "100%";
-      progressText.textContent = "Kirim Data selesai";
+      const detail = data.details
+        ? typeof data.details === "object"
+          ? JSON.stringify(data.details)
+          : data.details
+        : "";
 
       if (data.success) {
+        progressBar.style.background = "linear-gradient(90deg, #10b981 0%, #059669 100%)";
+        progressText.innerHTML = '<span style="color:#10b981"><i class="fas fa-check-circle"></i> Berhasil!</span>';
+        if (detailBox) detailBox.textContent = detail || "Semua data berhasil dikirim ke SAE.";
         addLog(`Kirim Data berhasil: ${data.message}`, "success");
-        if (data.details) {
-          addLog(`Detail: ${data.details}`, "info");
-        }
+        if (detail) addLog(`Detail: ${detail}`, "info");
+        finishSync(true, "Sinkronisasi selesai. " + (data.message || ""), detail);
       } else {
+        progressBar.style.background = "linear-gradient(90deg, #ef4444 0%, #dc2626 100%)";
+        progressText.innerHTML = '<span style="color:#ef4444"><i class="fas fa-times-circle"></i> Gagal!</span>';
+        if (detailBox) detailBox.textContent = detail || "Proses gagal. Lihat log aktivitas.";
         addLog(`Kirim Data gagal: ${data.message}`, "error");
-        if (data.details) addLog(`Detail: ${data.details}`, "error");
+        if (detail) addLog(`Detail: ${detail}`, "error");
+        finishSync(false, "Sinkronisasi gagal. " + (data.message || ""), detail);
       }
     })
     .catch((error) => {
-      addLog(`Error: ${error.message}`, "error");
       progressBar.style.width = "100%";
-      progressBar.classList.add("bg-danger");
-      progressText.textContent = "Terjadi kesalahan";
-    })
-    .finally(() => {
-      // Don't immediately clear — let polling update final state
-      // Polling will call clearSyncInProgress after 2s
+      progressBar.style.background = "linear-gradient(90deg, #ef4444 0%, #dc2626 100%)";
+      progressText.innerHTML = '<span style="color:#ef4444"><i class="fas fa-exclamation-triangle"></i> Error!</span>';
+      addLog(`Error: ${error.message}`, "error");
+      finishSync(false, "Koneksi ke server terputus. " + error.message, "");
     });
 }
 
@@ -205,12 +385,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ===== FUNGSI KONFIGURASI =====
 
+function toggleEditDapodik() {
+  const npsn = document.getElementById("dapodik_npsn");
+  const token = document.getElementById("dapodik_token");
+  const btn = document.getElementById("btn_save_dapodik");
+  if (npsn && token) {
+    npsn.disabled = false;
+    token.disabled = false;
+    // Sensor dibuka saat mode edit: kosongkan agar tidak tersimpan sebagai "***"
+    if (token.value === "***") token.value = "";
+    if (btn) btn.style.display = "";
+    npsn.focus();
+  }
+}
+
+function toggleEditSae() {
+  const url = document.getElementById("sae_base_url");
+  const key = document.getElementById("sae_api_key");
+  const btn = document.getElementById("btn_save_sae");
+  if (url && key) {
+    url.disabled = false;
+    key.disabled = false;
+    if (key.value === "***") key.value = "";
+    if (btn) btn.style.display = "";
+    url.focus();
+  }
+}
+
 function testDapodikConnection() {
   const token = document.getElementById("dapodik_token").value.trim();
   const npsn = document.getElementById("dapodik_npsn")
     ? document.getElementById("dapodik_npsn").value.trim()
     : "";
-  if (!token) {
+  if (!token || token === "***") {
     showConfigResult(false, "Token tidak boleh kosong");
     return;
   }
@@ -258,7 +465,7 @@ function testSaeConnection() {
   const apiKey = document.getElementById("sae_api_key").value.trim();
   const baseUrl = document.getElementById("sae_base_url").value.trim();
 
-  if (!apiKey) {
+  if (!apiKey || apiKey === "***") {
     showConfigResult(false, "API Key tidak boleh kosong");
     return;
   }
@@ -297,7 +504,8 @@ function testCurrentConfig() {
   // Include current API Key and Base URL from inputs so test does not require saving
   const apiKeyInput = document.getElementById("sae_api_key");
   const baseUrlInput = document.getElementById("sae_base_url");
-  if (apiKeyInput) formData.append("api_key", apiKeyInput.value.trim());
+  if (apiKeyInput && apiKeyInput.value.trim() && apiKeyInput.value.trim() !== "***")
+    formData.append("api_key", apiKeyInput.value.trim());
   if (baseUrlInput) formData.append("base_url", baseUrlInput.value.trim());
 
   fetch("index.php?action=test_current_config", {

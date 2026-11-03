@@ -9,8 +9,7 @@ class LoaderSafety {
     /**
      * Rate limiter: max requests per second ke Dapodik
      */
-    public static function checkRateLimit($max_per_second = 2) {
-        $cache_key = 'loader_dapodik_ratelimit';
+    public static function checkRateLimit($max_per_second = 10) {
         $cache_file = __DIR__ . '/cache/ratelimit.txt';
         
         if (!file_exists(dirname($cache_file))) {
@@ -32,7 +31,7 @@ class LoaderSafety {
         
         if (count($data) >= $max_per_second) {
             $sleep_time = (int)(1000000 * (1 - ($now - reset($data))));
-            if ($sleep_time > 0) {
+            if ($sleep_time > 0 && $sleep_time < 1000000) {
                 usleep($sleep_time);
             }
         }
@@ -95,7 +94,7 @@ class LoaderSafety {
     /**
      * Request timeout & retry logic untuk Dapodik
      */
-    public static function safeCurl($url, $bearer_token, $timeout = 10, $max_retries = 2) {
+    public static function safeCurl($url, $bearer_token, $timeout = 15, $max_retries = 2) {
         $retry_count = 0;
         $last_error = '';
         
@@ -108,15 +107,13 @@ class LoaderSafety {
                 CURLOPT_CONNECTTIMEOUT => 5,
                 CURLOPT_HTTPHEADER => [
                     'Authorization: Bearer ' . $bearer_token,
-                    'User-Agent: LoaderSAE/1.0',
-                    'Connection: close'  // Force close connection setiap request
+                    'User-Agent: SAEFeeder/1.0',
+                    'Accept: application/json'
                 ],
                 CURLOPT_FOLLOWLOCATION => false,
-                CURLOPT_SSL_VERIFYPEER => true,
-                CURLOPT_SSL_VERIFYHOST => 2,
-                CURLOPT_TCP_KEEPALIVE => 1,
-                CURLOPT_TCP_KEEPIDLE => 5,
-                CURLOPT_FRESH_CONNECT => true  // Jangan reuse connection
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_SSL_VERIFYHOST => 0,
+                CURLOPT_TCP_KEEPALIVE => 1
             ]);
             
             $response = curl_exec($ch);
@@ -195,21 +192,10 @@ class LoaderSafety {
     }
     
     /**
-     * Minimal payload: hanya field yang diperlukan SAE
+     * Payload passthrough: mempertahankan seluruh kolom persis seperti dari Dapodik
      */
     public static function minifyPayload($data) {
-        $allowed_keys = [
-            'npsn', 'nama', 'alamat', 'kota', 'propinsi', 'kode_pos',
-            'telepon', 'website', 'email', 'kepala_sekolah', 'nip_kepala'
-        ];
-        
-        $minified = [];
-        foreach ($allowed_keys as $key) {
-            if (isset($data[$key])) {
-                $minified[$key] = $data[$key];
-            }
-        }
-        
-        return $minified;
+        // ponytail: Kembalikan full data asli tanpa filter field agar semua kolom Dapodik tersimpan utuh
+        return $data;
     }
 }

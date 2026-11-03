@@ -1,0 +1,77 @@
+# Panduan Distribusi & Build Installer SAE Feeder
+
+File executable installer mandiri untuk **SAE Feeder** telah berhasil dibuat dan siap didistribusikan ke komputer operator sekolah.
+
+---
+
+## 1. File Installer Siap Pakai
+
+- **File**: `dist\SAE-Feeder-Setup.exe`
+- **Ukuran**: ~8.76 MB
+- **Arsitektur**: Windows 64-bit (Windows 10, Windows 11, Windows 7/8 x64)
+- **Kemandirian**: 100% Standalone (sudah memuat runtime PHP 8.3 portabel teroptimasi). Komputer target **TIDAK PERLU** menginstal Laragon, Composer, atau PHP sebelumnya.
+
+---
+
+## 2. Fitur Unggulan Installer & Launcher
+
+1. **Wizard Instalasi Visual (GUI)**:
+   - Header bertema gelap modern dengan Logo Resmi SAE.
+   - Pilihan direktori tujuan (default `%LOCALAPPDATA%\SAE-Feeder` yang bebas hak administrator UAC, atau folder custom seperti `C:\SAE-Feeder`).
+   - Opsi pembuatan shortcut di **Desktop** dan **Start Menu**.
+   - **Proteksi Konfigurasi**: Berkas `dynamic_config.json` tidak akan tertimpa saat pengguna melakukan update atau reinstall sehingga token Dapodik dan API key SAE tetap aman.
+   - Opsi otomatis *"Jalankan SAE Feeder setelah selesai"*.
+2. **Native Launcher (`SAE-Feeder.exe`)**:
+   - Berjalan di background tanpa jendela console hitam (CMD prompt).
+   - Menjalankan server PHP built-in di port `4215` (`http://localhost:4215`).
+   - Otomatis membuka peramban web (browser default) ke antarmuka SAE Feeder.
+   - Ikon baki sistem (**System Tray**) di pojok kanan bawah taskbar Windows dengan menu:
+     - 🌐 **Buka di Browser**
+     - 🔄 **Restart Server**
+     - 📁 **Buka Folder Aplikasi**
+     - ❌ **Keluar** (menghentikan server PHP secara bersih tanpa menyisakan proses yatim/orphan).
+3. **Uninstaller Resmi Windows (`Uninstall.exe`)**:
+   - Terdaftar secara otomatis di Windows **Settings > Apps > Installed apps** (atau *Programs and Features*).
+   - Memastikan proses server dihentikan, menghapus shortcut Desktop/Start Menu, menghapus entri registry, dan membersihkan folder aplikasi.
+
+---
+
+## 3. Cara Membangun Ulang Installer (Rebuild)
+
+Jika terdapat pembaruan kode PHP, CSS, atau aset pada `sae-feeder`, Anda dapat membuat ulang installer kapan saja dengan satu perintah:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File c:\laragon\www\sae-feeder\build-installer.ps1
+```
+
+Skrip ini akan secara otomatis:
+1. Memvalidasi dan mengemas runtime PHP portabel minimalis.
+2. Mengompilasi `SAE-Feeder.exe` (Launcher) dan `Uninstall.exe`.
+3. Memadatkan payload aplikasi ke dalam ZIP terenkapsulasi.
+4. Mengompilasi `dist\SAE-Feeder-Setup.exe` baru via `csc.exe` bawaan Windows.
+
+---
+
+## 4. Update Installer (Auto-Cek dari GitHub)
+
+Aplikasi terhubung ke repo `https://github.com/aadul888/sae-feeder`.
+
+1. Buka SAE Feeder, klik tombol **Cek Update** di header.
+2. Aplikasi membandingkan `VERSION` lokal dengan `VERSION` di branch `main`.
+3. Jika ada versi lebih baru, muncul alert + tautan unduh `SAE-Feeder-Setup.exe` (dari GitHub Release terbaru, fallback ke `dist/SAE-Feeder-Setup.exe`).
+4. Tutup SAE Feeder dari ikon tray, jalankan installer. `dynamic_config.json` tidak ditimpa, jadi token Dapodik & API key SAE tetap aman.
+
+## 5. Rilis Versi Baru (Maintainer)
+
+Set token GitHub: `$env:GITHUB_TOKEN = "ghp_..."` lalu jalankan:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File c:\laragon\www\sae-feeder\release.ps1 -Version 1.2.0 -Message "Perbaikan progres sinkronisasi"
+```
+
+Skrip akan: menaikkan `VERSION`, menyinkronkan versi Inno Setup, membangun installer, commit, tag `v1.2.0`, push `main` + tag, lalu membuat GitHub Release dan mengunggah installer bila `GITHUB_TOKEN` tersedia. Tanpa token, unggah manual di halaman Releases.
+
+## 6. Opsi Alternatif: Inno Setup 6
+
+Tersedia juga skrip Inno Setup standar di `sae-feeder-setup.iss` jika ingin dikompilasi menggunakan GUI Inno Setup Compiler.
+Cukup buka file `sae-feeder-setup.iss` di Inno Setup dan tekan **Compile (Ctrl + F9)**.
