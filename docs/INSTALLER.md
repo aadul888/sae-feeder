@@ -52,14 +52,18 @@ Skrip ini akan secara otomatis:
 
 ---
 
-## 4. Update Installer (Auto-Cek dari GitHub)
-
-Aplikasi terhubung ke repo `https://github.com/aadul888/sae-feeder`.
+## 4. Update Aplikasi (Online, Tanpa Installer)
 
 1. Buka SAE Feeder, klik tombol **Cek Update** di header.
-2. Aplikasi membandingkan `VERSION` lokal dengan `VERSION` di branch `main`.
-3. Jika ada versi lebih baru, muncul alert + tautan unduh `SAE-Feeder-Setup.exe` (dari GitHub Release terbaru, fallback ke `dist/SAE-Feeder-Setup.exe`).
-4. Tutup SAE Feeder dari ikon tray, jalankan installer. `dynamic_config.json` tidak ditimpa, jadi token Dapodik & API key SAE tetap aman.
+2. Server (`update.php`) membandingkan `VERSION` lokal dengan `VERSION` branch `main`.
+3. Jika ada versi lebih baru, muncul **Update Online Sekarang**. Klik untuk mengunduh `index.php`, `proses.php`, `safety.php`, `.htaccess`, aset CSS/JS, dan `VERSION` langsung dari repo.
+4. File lama dicadangkan ke `backup/YYYYmmdd_HHMMSS/`. `dynamic_config.json` tidak tersentuh, jadi token Dapodik & API key SAE tetap aman.
+5. Setelah selesai, klik **Muat Ulang Halaman**.
+
+Catatan:
+- Update online hanya untuk file aplikasi. Perubahan runtime PHP, Launcher, atau installer tetap butuh `SAE-Feeder-Setup.exe` (tautan *Installer (offline)* pada alert).
+- Tombol update hanya berfungsi dari komputer server (remote address `127.0.0.1`).
+- Jika tombol tidak muncul/hilang, terapkan manual: klik **Cek Update** → **Installer (offline)**.
 
 ## 5. Rilis Versi Baru (Maintainer)
 
@@ -70,6 +74,8 @@ powershell -ExecutionPolicy Bypass -File c:\laragon\www\sae-feeder\release.ps1 -
 ```
 
 Skrip akan: menaikkan `VERSION`, menyinkronkan versi Inno Setup, membangun installer, commit, tag `v1.2.0`, push `main` + tag, lalu membuat GitHub Release dan mengunggah installer bila `GITHUB_TOKEN` tersedia. Tanpa token, unggah manual di halaman Releases.
+
+Untuk rilis online saja (tanpa ganti installer), cukup ubah `VERSION` dan push ke `main`; tombol **Update Online** di klien akan menariknya.
 
 ## 6. Opsi Alternatif: Inno Setup 6
 

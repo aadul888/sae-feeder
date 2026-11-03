@@ -159,7 +159,7 @@ if (-not (Test-Path $uninstallerExe)) {
 }
 
 # Salin berkas aplikasi ke staging (TANPA dynamic_config.json — config bersih untuk fresh install)
-$appFiles = @('index.php', 'proses.php', 'safety.php', 'sae-logo.png', 'favicon.png', 'run_feeder.bat', '.htaccess', 'VERSION')
+$appFiles = @('index.php', 'proses.php', 'safety.php', 'update.php', 'sae-logo.png', 'favicon.png', 'run_feeder.bat', '.htaccess', 'VERSION')
 foreach ($af in $appFiles) {
     $src = Join-Path $rootDir $af
     if (Test-Path $src) {
@@ -202,9 +202,6 @@ Set-Content -Path "$stagingDir\dynamic_config.json" -Value $blankConfig -Encodin
 
 if (Test-Path "$rootDir\assets") {
     Copy-Item "$rootDir\assets" "$stagingDir\assets" -Recurse -Force
-}
-if (Test-Path "$rootDir\get") {
-    Copy-Item "$rootDir\get" "$stagingDir\get" -Recurse -Force
 }
 
 # 7. Buat Payload Zip & Kompilasi Setup Installer

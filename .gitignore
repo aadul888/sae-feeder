@@ -6,6 +6,12 @@ logs/*.log
 cache/*
 sync_progress.json
 
+# Backup update online
+backup/
+
+# Contoh data Dapodik (tidak dipakai aplikasi)
+get/
+
 # Installer build artifacts
 build/
 dist/payload/

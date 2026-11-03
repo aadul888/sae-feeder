@@ -34,25 +34,19 @@ function escapeHtml(value) {
 }
 
 // Alert hasil sinkronisasi: tidak hilang sendiri, hanya ditutup manual.
-function showSyncAlert(type, message, details, link) {
+// actionsHtml: HTML internal (bukan data pengguna) untuk tombol aksi.
+function showSyncAlert(type, message, details, actionsHtml) {
   const box = document.getElementById("sync-alert");
   if (!box) return;
   const cls = type === "success" ? "alert-success" : type === "error" ? "alert-danger" : "alert-info";
   const icon = type === "success" ? "check-circle" : type === "error" ? "times-circle" : "info-circle";
-  let linkHtml = "";
-  if (link && typeof link.url === "string" && /^https:\/\//i.test(link.url)) {
-    linkHtml =
-      '<a href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener" ' +
-      'style="display:inline-block;margin-top:.4rem;font-weight:700;color:inherit;text-decoration:underline;">' +
-      escapeHtml(link.label || "Unduh") + "</a>";
-  }
   let html =
     '<div class="alert ' + cls + '" style="display:flex; gap:.55rem; align-items:flex-start;">' +
     '<i class="fas fa-' + icon + '" style="margin-top:.2rem;"></i>' +
     '<div style="flex:1; min-width:0;">' +
     '<div style="font-weight:700;">' + escapeHtml(message) + "</div>" +
     (details ? '<div style="font-size:.76rem; opacity:.85; margin-top:.25rem;">' + escapeHtml(details) + "</div>" : "") +
-    linkHtml +
+    (actionsHtml || "") +
     "</div>" +
     '<button type="button" aria-label="Tutup" onclick="document.getElementById(\'sync-alert\').style.display=\'none\'" ' +
     'style="background:none;border:none;color:inherit;cursor:pointer;font-size:1rem;line-height:1;padding:0;">&times;</button>' +
@@ -61,89 +55,90 @@ function showSyncAlert(type, message, details, link) {
   box.style.display = "block";
 }
 
-function parseVersion(value) {
-  return String(value || "")
-    .trim()
-    .replace(/^v/i, "")
-    .split(".")
-    .map(function (n) {
-      return parseInt(n, 10) || 0;
-    });
+function actionLink(href, label) {
+  if (!/^https:\/\//i.test(href)) href = "#";
+  return (
+    '<a href="' + escapeHtml(href) + '" target="_blank" rel="noopener" ' +
+    'style="display:inline-block;margin:.4rem .6rem 0 0;font-weight:700;color:inherit;text-decoration:underline;">' +
+    escapeHtml(label) + "</a>"
+  );
 }
 
-function isNewerVersion(candidate, current) {
-  const a = parseVersion(candidate);
-  const b = parseVersion(current);
-  for (let i = 0; i < Math.max(a.length, b.length); i++) {
-    const x = a[i] || 0;
-    const y = b[i] || 0;
-    if (x > y) return true;
-    if (x < y) return false;
-  }
-  return false;
+function actionButton(onclick, label) {
+  return (
+    '<button type="button" onclick="' + escapeHtml(onclick) + '" ' +
+    'style="display:inline-block;margin:.4rem .6rem 0 0;padding:.3rem .7rem;border:0;border-radius:8px;' +
+    'background:currentColor;color:#0b0f19;font-weight:700;cursor:pointer;">' + escapeHtml(label) + "</button>"
+  );
 }
 
-// Cek update dari repo GitHub: bandingkan VERSION, tautkan installer terbaru.
+// Cek update online: server (update.php) yang membandingkan VERSION dengan repo.
 function checkForUpdate() {
-  const cfg = window.SAE_APP || {};
-  const repo = cfg.repo || "aadul888/sae-feeder";
-  const current = cfg.version || "0.0.0";
   const btn = document.getElementById("btn-check-update");
   if (btn) btn.disabled = true;
 
-  showSyncAlert("info", "Memeriksa update...", "Versi terpasang: v" + current);
+  showSyncAlert("info", "Memeriksa update...", "Menghubungi repo GitHub.");
 
-  fetch("https://raw.githubusercontent.com/" + repo + "/main/VERSION", { cache: "no-store" })
+  fetch("update.php?action=check", { cache: "no-store" })
     .then(function (r) {
-      if (!r.ok) throw new Error("HTTP " + r.status);
-      return r.text();
+      return r.json();
     })
-    .then(function (txt) {
-      const latest = String(txt || "").trim();
-      if (!/^v?\d+\.\d+/.test(latest)) throw new Error("Format VERSION tidak valid");
+    .then(function (data) {
+      if (!data || !data.success) {
+        throw new Error((data && data.message) || "Respons tidak valid");
+      }
+      const current = data.current || (window.SAE_APP && window.SAE_APP.version) || "0.0.0";
+      const latest = data.latest || current;
 
-      if (!isNewerVersion(latest, current)) {
+      if (!data.update_available) {
         showSyncAlert("success", "SAE Feeder sudah versi terbaru (v" + current + ").");
-        return null;
+        return;
       }
 
-      // Cari asset installer di GitHub Release terbaru, fallback ke installer mentah di repo.
-      return fetch("https://api.github.com/repos/" + repo + "/releases/latest", {
-        headers: { Accept: "application/vnd.github+json" },
-        cache: "no-store",
-      })
-        .then(function (r) {
-          return r.ok ? r.json() : null;
-        })
-        .catch(function () {
-          return null;
-        })
-        .then(function (rel) {
-          let url = "https://github.com/" + repo + "/raw/main/dist/SAE-Feeder-Setup.exe";
-          if (rel && Array.isArray(rel.assets)) {
-            const asset =
-              rel.assets.find(function (a) {
-                return a.name === "SAE-Feeder-Setup.exe";
-              }) ||
-              rel.assets.find(function (a) {
-                return /setup.*\.exe$/i.test(a.name);
-              });
-            if (asset && asset.browser_download_url) url = asset.browser_download_url;
-          }
-          showSyncAlert(
-            "info",
-            "Update tersedia: v" + latest + " (terpasang v" + current + ").",
-            "Unduh installer, tutup SAE Feeder dari ikon tray, lalu jalankan. Token Dapodik dan API key SAE tetap tersimpan.",
-            { url: url, label: "Unduh SAE-Feeder-Setup.exe v" + latest },
-          );
-          return null;
-        });
+      const repo = (window.SAE_APP && window.SAE_APP.repo) || "aadul888/sae-feeder";
+      const installerUrl = "https://github.com/" + repo + "/raw/main/dist/SAE-Feeder-Setup.exe";
+      showSyncAlert(
+        "info",
+        "Update tersedia: v" + latest + " (terpasang v" + current + ").",
+        "Update online hanya mengubah file aplikasi (PHP/JS/CSS). Token Dapodik dan API key SAE tidak tersentuh. Gunakan installer hanya jika diminta.",
+        actionButton("applyOnlineUpdate()", "Update Online Sekarang") +
+          actionLink(installerUrl, "Installer (offline)"),
+      );
     })
     .catch(function (err) {
       showSyncAlert("error", "Gagal memeriksa update.", String((err && err.message) || err));
     })
     .then(function () {
       if (btn) btn.disabled = false;
+    });
+}
+
+// Terapkan update online: unduh file sumber dari repo, cadangkan versi lama.
+function applyOnlineUpdate() {
+  if (syncInProgress) {
+    showSyncAlert("error", "Sinkronisasi sedang berjalan.", "Tunggu sampai selesai sebelum update.");
+    return;
+  }
+  showSyncAlert("info", "Mengunduh update...", "Jangan tutup halaman ini.");
+
+  fetch("update.php?action=apply", { method: "POST" })
+    .then(function (r) {
+      return r.json();
+    })
+    .then(function (data) {
+      if (data && data.success) {
+        showSyncAlert(
+          "success",
+          data.message || "Update berhasil.",
+          "Cadangan versi lama: " + (data.backup || "backup/") + ". Muat ulang halaman untuk memakai versi baru.",
+          actionButton("location.reload()", "Muat Ulang Halaman"),
+        );
+      } else {
+        showSyncAlert("error", "Update gagal.", (data && data.message) || "Tidak ada respons");
+      }
+    })
+    .catch(function (err) {
+      showSyncAlert("error", "Update gagal.", String((err && err.message) || err));
     });
 }
 
