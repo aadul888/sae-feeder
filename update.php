@@ -4,12 +4,17 @@
  * SAE Feeder - Online Updater
  * Update source aplikasi langsung dari repo GitHub, tanpa installer/exe.
  * Hanya bisa dijalankan dari komputer server (localhost).
+ *
+ * Sumber berkas memakai GitHub Contents API (selalu segar), lalu fallback ke
+ * raw.githubusercontent.com. raw CDN punya cache ~5 menit, jadi kalau dipakai
+ * langsung, update bisa menarik berkas versi lama.
  */
 
 header('Content-Type: application/json');
 
 $repo    = 'aadul888/sae-feeder';
 $branch  = 'main';
+$apiBase = "https://api.github.com/repos/$repo/contents/";
 $rawBase = "https://raw.githubusercontent.com/$repo/$branch/";
 $appDir  = __DIR__;
 
@@ -42,13 +47,35 @@ function http_get($url)
         CURLOPT_CONNECTTIMEOUT => 15,
         CURLOPT_SSL_VERIFYPEER => false,
         CURLOPT_SSL_VERIFYHOST => false,
-        CURLOPT_USERAGENT      => 'SAE-Feeder-Updater/1.0'
+        CURLOPT_USERAGENT      => 'SAE-Feeder-Updater/1.0',
+        CURLOPT_HTTPHEADER     => ['Accept: application/vnd.github+json']
     ]);
     $body = curl_exec($ch);
     $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     $err  = curl_error($ch);
     curl_close($ch);
     return [$code, $body, $err];
+}
+
+// Ambil isi berkas dari repo: Contents API dulu (bebas cache), fallback raw CDN.
+function repo_get($path)
+{
+    global $apiBase, $rawBase, $branch;
+
+    $enc = implode('/', array_map('rawurlencode', explode('/', $path)));
+    [$code, $body] = http_get($apiBase . $enc . '?ref=' . $branch . '&cb=' . mt_rand());
+    if ($code === 200 && is_string($body)) {
+        $json = json_decode($body, true);
+        if (isset($json['content'])) {
+            $decoded = base64_decode($json['content']);
+            if ($decoded !== false) {
+                return [200, $decoded];
+            }
+        }
+    }
+
+    [$code, $body, $err] = http_get($rawBase . $path . '?cb=' . mt_rand());
+    return [$code, $body === false ? '' : $body, $err];
 }
 
 // Proteksi: hanya dari komputer tempat server berjalan
@@ -59,12 +86,11 @@ if (!in_array($ip, ['127.0.0.1', '::1', '::ffff:127.0.0.1'], true)) {
 
 $action       = $_REQUEST['action'] ?? 'check';
 $localVersion = trim(@file_get_contents($appDir . '/VERSION') ?: '0.0.0');
-$cacheBuster  = '?t=' . time();
 
 if ($action === 'check') {
-    [$code, $body, $err] = http_get($rawBase . 'VERSION' . $cacheBuster);
-    if ($code !== 200 || $body === false) {
-        json_out(['success' => false, 'message' => 'Gagal cek versi terbaru.' . ($err ? ' ' . $err : '')]);
+    [$code, $body] = repo_get('VERSION');
+    if ($code !== 200 || $body === '') {
+        json_out(['success' => false, 'message' => 'Gagal cek versi terbaru.']);
     }
     $latest = trim($body);
     json_out([
@@ -80,9 +106,9 @@ if ($action === 'apply') {
         json_out(['success' => false, 'message' => 'Gunakan metode POST.']);
     }
 
-    [$code, $body, $err] = http_get($rawBase . 'VERSION' . $cacheBuster);
-    if ($code !== 200 || $body === false) {
-        json_out(['success' => false, 'message' => 'Gagal mengambil VERSION terbaru.' . ($err ? ' ' . $err : '')]);
+    [$code, $body] = repo_get('VERSION');
+    if ($code !== 200 || $body === '') {
+        json_out(['success' => false, 'message' => 'Gagal mengambil VERSION terbaru.']);
     }
     $latest = trim($body);
     if (!version_compare($latest, $localVersion, '>')) {
@@ -98,8 +124,8 @@ if ($action === 'apply') {
     foreach ($manifest as $rel) {
         if ($rel === 'VERSION') continue; // ditulis terakhir setelah semua sukses
 
-        [$c, $content] = http_get($rawBase . $rel . $cacheBuster);
-        if ($c !== 200 || $content === false || $content === '') {
+        [$c, $content] = repo_get($rel);
+        if ($c !== 200 || $content === '') {
             $failed[] = $rel;
             continue;
         }
