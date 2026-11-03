@@ -77,7 +77,7 @@ $app_update_repo = 'aadul888/sae-feeder';
                 <img src="sae-logo.png" alt="SAE Logo">
                 <div class="titles">
                     <h2 class="section-title">SAE Feeder</h2>
-                    <p class="text-muted">Sinkronisasi Data Dapodik ke SAE</p>
+                    <p class="text-muted">Sinkronisasi Data Dapodik ke SAE · <span id="app-version">v<?php echo htmlspecialchars($app_version); ?></span></p>
                 </div>
                 <button class="btn btn-outline-secondary btn-sm" id="btn-check-update" onclick="checkForUpdate()"
                     style="margin-left: auto; white-space: nowrap;" title="Versi <?php echo htmlspecialchars($app_version); ?>">
