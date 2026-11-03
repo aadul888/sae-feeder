@@ -129,7 +129,6 @@ function checkForUpdate() {
                 return /setup.*\.exe$/i.test(a.name);
               });
             if (asset && asset.browser_download_url) url = asset.browser_download_url;
-            else if (rel.html_url) url = rel.html_url;
           }
           showSyncAlert(
             "info",

@@ -2,7 +2,7 @@
 ; SAE Feeder - Dapodik Data Synchronizer
 
 #define MyAppName "SAE Feeder"
-#define MyAppVersion "1.1.0"
+#define MyAppVersion "1.1.1"
 #define MyAppPublisher "SAE Education"
 #define MyAppURL "https://sae.smakpal.sch.id"
 #define MyAppExeName "SAE-Feeder.exe"
