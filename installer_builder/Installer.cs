@@ -262,8 +262,34 @@ namespace SaeFeeder
             worker.Start();
         }
 
+        private static void StopRunningApp(string targetDir)
+        {
+            // Hentikan launcher + server PHP lama di folder ini agar berkas tidak terkunci
+            // dan runtime PHP baru langsung dipakai (tanpa restart manual oleh pengguna).
+            foreach (string name in new[] { "SAE-Feeder", "php", "php-win" })
+            {
+                foreach (Process p in Process.GetProcessesByName(name))
+                {
+                    try
+                    {
+                        string exePath = p.MainModule.FileName;
+                        if (exePath.StartsWith(targetDir, StringComparison.OrdinalIgnoreCase))
+                        {
+                            p.Kill();
+                            p.WaitForExit(3000);
+                        }
+                    }
+                    catch { }
+                }
+            }
+            Thread.Sleep(500);
+        }
+
         private void PerformInstallation(string targetDir, bool makeDesktop, bool makeStartMenu, bool runAfter)
         {
+            UpdateStatus("Menutup SAE Feeder yang sedang berjalan...", 3);
+            StopRunningApp(targetDir);
+
             UpdateStatus("Mempersiapkan direktori tujuan...", 5);
             if (!Directory.Exists(targetDir))
             {

@@ -17,6 +17,20 @@ if (php_sapi_name() === 'cli-server') {
     }
 }
 
+// Cek runtime: ekstensi curl wajib (dipakai untuk Dapodik & SAE).
+// Tanpa ini PHP fatal -> respons kosong -> UI bingung ("Unexpected end of JSON input").
+if (!function_exists('curl_init')) {
+    $msg = 'Extension PHP "curl" tidak aktif. Klik kanan ikon tray SAE Feeder lalu pilih "Restart Server". Bila masih gagal, pasang ulang aplikasi.';
+    if (isset($_REQUEST['action'])) {
+        header('Content-Type: application/json');
+        echo json_encode(['success' => false, 'message' => $msg]);
+        exit;
+    }
+    echo '<!doctype html><meta charset="utf-8"><div style="font:16px/1.5 system-ui;padding:32px;color:#b91c1c">'
+        . '<h3 style="margin:0 0 .5rem">Runtime PHP tidak lengkap</h3><p>' . htmlspecialchars($msg) . '</p></div>';
+    exit;
+}
+
 // Load backend logic
 require_once __DIR__ . '/proses.php';
 
