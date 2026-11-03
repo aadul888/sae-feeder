@@ -7,8 +7,13 @@
 // Let the built-in PHP server serve real static assets directly; never bypass .php requests (breaks AJAX POSTs)
 if (php_sapi_name() === 'cli-server') {
     $filePath = __DIR__ . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    if (is_file($filePath) && strtolower(pathinfo($filePath, PATHINFO_EXTENSION)) !== 'php') {
-        return false;
+    if (is_file($filePath)) {
+        $isIndex = strtolower(basename($filePath)) === 'index.php';
+        // Static assets: serve langsung. Script PHP lain (mis. update.php): serve langsung juga,
+        // supaya tetap bisa diakses walau server dijalankan dengan router index.php (launcher lama).
+        if (strtolower(pathinfo($filePath, PATHINFO_EXTENSION)) !== 'php' || !$isIndex) {
+            return false;
+        }
     }
 }
 
