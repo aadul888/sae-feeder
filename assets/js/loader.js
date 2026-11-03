@@ -67,8 +67,8 @@ function actionLink(href, label) {
 function actionButton(onclick, label) {
   return (
     '<button type="button" onclick="' + escapeHtml(onclick) + '" ' +
-    'style="display:inline-block;margin:.4rem .6rem 0 0;padding:.3rem .7rem;border:0;border-radius:8px;' +
-    'background:currentColor;color:#0b0f19;font-weight:700;cursor:pointer;">' + escapeHtml(label) + "</button>"
+    'style="display:inline-block;margin:.4rem .6rem 0 0;padding:.4rem .9rem;border:0;border-radius:8px;' +
+    'background:#2563eb;color:#fff;font-weight:700;line-height:1.4;cursor:pointer;">' + escapeHtml(label) + "</button>"
   );
 }
 
