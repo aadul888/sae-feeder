@@ -237,8 +237,8 @@ namespace SaeFeeder
             {
                 ProcessStartInfo psi = new ProcessStartInfo();
                 psi.FileName = phpExe;
-                // Listen on 0.0.0.0 so both localhost and LAN IP are supported
-                psi.Arguments = string.Format("-S 0.0.0.0:{0} -t \"{1}\" \"{1}\\index.php\"", PORT, appDir);
+                // Listen on 0.0.0.0 agar localhost & LAN IP didukung; akses dari luar tetap dibatasi di update.php
+                psi.Arguments = string.Format("-d display_errors=0 -d snmp.disable=1 -S 0.0.0.0:{0} -t \"{1}\"", PORT, appDir);
                 psi.WorkingDirectory = appDir;
                 psi.CreateNoWindow = true;
                 psi.UseShellExecute = false;

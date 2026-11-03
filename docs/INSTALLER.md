@@ -81,3 +81,13 @@ Untuk rilis online saja (tanpa ganti installer), cukup ubah `VERSION` dan push k
 
 Tersedia juga skrip Inno Setup standar di `sae-feeder-setup.iss` jika ingin dikompilasi menggunakan GUI Inno Setup Compiler.
 Cukup buka file `sae-feeder-setup.iss` di Inno Setup dan tekan **Compile (Ctrl + F9)**.
+
+## 7. Metode Portable (Tanpa Installer)
+
+Untuk PC yang sudah menjalankan Dapodik, metode paling simpel: ekstrak `dist/SAE-Feeder-Portable.zip` ke folder mana saja, lalu jalankan `run_feeder.bat`.
+
+- `run_feeder.bat` mencari PHP berurutan: `php\` di folder yang sama → `C:\Program Files (x86)\Dapodik\php\php.exe` → `C:\Program Files\Dapodik\php\php.exe` → `php` di PATH.
+- Server berjalan di `http://localhost:4215` dan browser dibuka otomatis.
+- Tidak butuh hak admin; hapus folder = uninstall.
+- Build paket: `powershell -ExecutionPolicy Bypass -File build-portable.ps1` (tambah `-BundlePhp` untuk menyertakan runtime PHP bila tidak mau bergantung PHP Dapodik).
+

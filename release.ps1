@@ -34,8 +34,11 @@ if (Test-Path $iss) {
 if (-not $NoBuild) {
     Write-Host "Membangun installer..." -ForegroundColor Yellow
     & powershell -ExecutionPolicy Bypass -File (Join-Path $rootDir "build-installer.ps1")
+    Write-Host "Membangun paket portable..." -ForegroundColor Yellow
+    & powershell -ExecutionPolicy Bypass -File (Join-Path $rootDir "build-portable.ps1")
 }
 $installer = Join-Path $rootDir "dist\SAE-Feeder-Setup.exe"
+$portable = Join-Path $rootDir "dist\SAE-Feeder-Portable.zip"
 if (-not (Test-Path $installer)) {
     throw "Installer tidak ditemukan: $installer"
 }
@@ -79,6 +82,12 @@ if ($env:GITHUB_TOKEN) {
     $uploadUrl = $release.upload_url.Replace("{?name,label}", "?name=SAE-Feeder-Setup.exe")
     Invoke-RestMethod -Uri $uploadUrl -Method Post -Headers $headers `
         -InFile $installer -ContentType "application/octet-stream"
+
+    if (Test-Path $portable) {
+        $uploadPortable = $release.upload_url.Replace("{?name,label}", "?name=SAE-Feeder-Portable.zip")
+        Invoke-RestMethod -Uri $uploadPortable -Method Post -Headers $headers `
+            -InFile $portable -ContentType "application/zip"
+    }
 
     Write-Host "Release selesai: $($release.html_url)" -ForegroundColor Green
 } else {
